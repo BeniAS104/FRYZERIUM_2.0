@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'SeasonsRegular';
+    src: url('./Fonts/Fontspring-DEMO-theseasons-reg.woff') format('woff');
+}
+
+@font-face {
+    font-family: "SeasonsBold";
+    src: url('../Fonts/Fontspring-DEMO-theseasons-bd.woff') format('woff');
+}
+
+/* ROOT VARIABLES */
+:root {
+    /* colors */
+    --brown: #2A180E;
+    --black: #17130B;
+    --white: #FCFCFC;
+    --beige: #F4EBE2;
+    --gold: #C5841B;
+
+    /* Font family */
+    --montserrat: 'Montserrat', sans-serif;
+    --seasonsregular: 'SeasonsRegular', serif;
+    --seasonsbold: 'SeasonsBold', serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--montserrat);
+    text-decoration: none;
+    color:inherit;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+    scroll-behavior:smooth;
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    background-color: var(--white);
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.footer {
+    padding:5rem 5rem 8rem 5rem;
+    background-color: var(--brown);
+    min-height: 25rem;
+}
+.container {
+    max-width: 100%;
+    color: var(--white);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-column {
+    max-width: 25%;
+}
+.footerh4 {
+    font-family: var(--seasonsregular);
+}
+.footerbutton {
+    
+}
+
+
