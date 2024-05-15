@@ -38,15 +38,19 @@
 }
 html {
     background-color: var(--white);
+    height: 100%;
 }
-img {
-    display: block;
-    max-width: 100%;
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .footer {
     padding:5rem 5rem 8rem 5rem;
     background-color: var(--brown);
     min-height: 25rem;
+    font-family: var(--montserrat);
+    margin-top: auto;
 }
 .container {
     max-width: 100%;
@@ -59,13 +63,125 @@ img {
 }
 .footer-column {
     max-width: 25%;
+    max-height: calc(324.8px - 0.87rem);
 }
 .footerh4 {
     font-family: var(--seasonsbold);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
  
 }
-.footerbutton {
-    
+.footer-column button {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 0.9375rem;
+    display: flex;
+    border: none;
+    width: 13.21369rem;
+    height: 3.75rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.87rem;
+    cursor: pointer;
+}
+.footerbutton1text {
+    margin-right: 15px;
+}
+.footerphone {
+    margin-left:7px;
+}
+.footerbuttontext {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.logofooter {
+    margin-bottom: 4rem;
+        display: block;
+
+}
+#address {
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 4.15rem;
+}
+.socials {
+    display: flex;
+    gap:1.75rem;
+}
+.openinghours {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5rem;
+}
+.hours {
+    margin-left: 2rem;
+}
+.parkingcolumn {
+    width: 13.9375rem;
+}
+.parking {
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.02rem;
 }
 
+@media (max-width:1133px) {
+    .footer {
+        padding:6.25rem 5rem 8rem 6.25rem;
+        background-color: var(--brown);
+        min-height: 25rem;
+        font-family: var(--montserrat);
+    }
+    .container {
+        max-width: 100%;
+        color: var(--white);
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-column {
+        max-width: none;
+        width: 50%;
+        max-height: none;
+    }
+    .openinghours {
+        justify-content: space-evenly;
+        
+    }
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
 
+    .parking {
+        padding-inline: 1rem;
+        width: 13.9375rem;
+        text-align: center;
+    }
+}
+@media (max-width:728px) {
+        .row {
+            flex-direction: column;
+            
+        }
+        .footer-column {
+            width: 100%;
+        }
+        .ohtext {
+            display: block;
+        }
+        .parking {
+            text-align: center;
+        }
+        .openinghours {
+            width: 13.9375rem;
+        }
+ }
