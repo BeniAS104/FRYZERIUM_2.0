@@ -1,0 +1,128 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*=============== CUSTOM FONTS ===============*/
+@font-face {
+    font-family: 'SeasonsRegular';
+    src: url('./Fonts/Fontspring-DEMO-theseasons-reg.woff') format('woff');
+}
+
+@font-face {
+    font-family: "SeasonsBold";
+    src: url('../Fonts/Fontspring-DEMO-theseasons-bd.woff') format('woff');
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    --brown: #2A180E;
+    --black: #17130B;
+    --white: #FCFCFC;
+    --beige: #F4EBE2;
+    --gold: #C5841B;
+
+    /*========== Font Family ==========*/
+    --montserrat: 'Montserrat', sans-serif;
+    --seasonsregular: 'SeasonsRegular', serif;
+    --seasonsbold: 'SeasonsBold', serif;
+
+    /*========== Font Size ==========*/
+    --huge-heading: 2.25rem; /*36px*/
+    --heading: 2.25rem; /*36px*/
+    --subheading: 1.5rem; /*24px*/
+    --text: 1rem; /*16px*/
+
+    /*========== Font Weight ==========*/
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+/*=============== BASE ===============*/
+/* Universal selector */
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    padding: 0;
+    margin: 0;
+    font-family: var(--montserrat);
+    text-decoration: none;
+    color:inherit;
+    font-size: var(--text);
+    scroll-behavior:smooth; /* Enable smooth scrolling */
+    -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    background-color: var(--white);
+    min-height: 100vh; /* Set the minimum height of the body to 100 viewport height */
+}
+
+.header {
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: var(--white);
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Align items vertically at the center */
+    transition: 0.6s; /* Add a transition effect */
+    z-index: 100; /* Stack above other elements */
+}
+.logo {
+    max-width: 10rem;
+    height: auto;
+}
+.navlinks {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+#check {
+    display: none; /* Hide the checkbox */
+}
+
+.icons {
+    position: absolute; /* Absolute positioning */
+    right: 5%; /* Distance from the right */
+    color: var(--light);
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: none; /* Hide the icons by default */
+}
+
+@media (max-width: 1350px) {
+    .icons {
+        display: inline-flex; /* Display icons as inline-flex at smaller screen sizes */
+    }
+    #check:checked~.navlinks {
+        height: 30rem;
+        padding-top: 2rem;
+    }
+    #check:checked~.icons #menu-icon {
+        display: none; /* Hide the menu icon when the checkbox is checked */
+        font-size: 2.5rem;
+    }
+    .icons #close-icon {
+        display: none; /* Hide the close icon by default */
+        font-size: 2.5rem;
+    }
+    #check:checked~.icons #close-icon {
+        display: block; /* Display the close icon when the checkbox is checked */
+    }
+    .navlinks {
+        position: absolute;
+        flex-direction: column;
+        gap: 2rem;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background:var(--beige);
+        transition: .3s ease-in-out;
+        overflow: hidden;
+    }
+}
