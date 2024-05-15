@@ -27,7 +27,7 @@
     --seasonsbold: 'SeasonsBold', serif;
 
     /*========== Font Size ==========*/
-    --huge-heading: 2.25rem; /*36px*/
+    --huge-heading: 3rem; /*48px*/
     --heading: 2.25rem; /*36px*/
     --subheading: 1.5rem; /*24px*/
     --text: 1rem; /*16px*/
@@ -38,6 +38,16 @@
     --font-medium: 500;
     --font-semi-bold: 600;
     --font-bold: 700;
+
+    /*========== Margins ==========*/
+    --margin-45px: 2.813rem; /*45px*/
+    --margin-60px: 3.75rem; /*60px*/
+    --margin-150px: 9.375rem; /*150px*/
+    --margin-230px: 14.375rem; /*230px*/
+
+    /*========== Line Height ==========*/
+    --line-height-subheading: 2.188rem; /*35px*/
+    --line-height-text: 1.5rem: /*24px*/
 }
 
 /*=============== BASE ===============*/
@@ -57,6 +67,7 @@
 html {
     background-color: var(--white);
     min-height: 100vh; /* Set the minimum height of the body to 100 viewport height */
+    color: var(--black);
 }
 
 .header {
@@ -82,29 +93,60 @@ html {
     align-items: center;
     gap: 1.5rem;
 }
+.navlinks a {
+    position: relative;
+}
+/* Create a pseudo-element (::before) for all anchor tags inside elements with class 'navlinks' */
+.navlinks a::before {
+    content: ''; /* An empty content */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background: var(--black);
+    transition: .3s;
+}
+.navlinks a:not(.no-hover-effect):hover::before {
+    width: 100%;
+}
+.bookingButton {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--brown);
+    color:var(--white);
+}
 #check {
     display: none; /* Hide the checkbox */
 }
-
 .icons {
     position: absolute; /* Absolute positioning */
     right: 5%; /* Distance from the right */
     color: var(--black);
     cursor: pointer; /* Change cursor to pointer on hover */
     display: none; /* Hide the icons by default */
-    
 }
 .icons i {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Size of the burger menu and close buttons */
 }
 .instagramHeader {
-    vertical-align: middle;
+    vertical-align: middle; /* Places IG icon in the middle */
 }
 
+/*=============== BREAKPOINTS HEADER ===============*/
+
 @media (max-width: 1300px) {
+    .header {
+        padding: 20px 5%;
+    }
+    .logo {
+        max-width: 6rem;
+        height: auto;
+    }
     .icons {
         display: inline-flex; /* Display icons as inline-flex at smaller screen sizes */
-        font-size: 2.5rem;
     }
     #check:checked~.navlinks {
         height: 30rem;
@@ -132,5 +174,8 @@ html {
         background:var(--beige);
         transition: .3s ease-in-out;
         overflow: hidden;
+    }
+    #check:checked~.navlinks {
+        height: 33rem; /* height of the drop-down beige navbar */
     }
 }
