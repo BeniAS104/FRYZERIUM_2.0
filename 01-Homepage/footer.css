@@ -61,7 +61,8 @@ img {
     max-width: 25%;
 }
 .footerh4 {
-    font-family: var(--seasonsregular);
+    font-family: var(--seasonsbold);
+ 
 }
 .footerbutton {
     

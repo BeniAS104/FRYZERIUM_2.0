@@ -92,9 +92,16 @@ html {
     color: var(--light);
     cursor: pointer; /* Change cursor to pointer on hover */
     display: none; /* Hide the icons by default */
+    
+}
+.icons i {
+    font-size: 2.5rem;
+}
+.instagramHeader {
+    vertical-align: middle;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
     .icons {
         display: inline-flex; /* Display icons as inline-flex at smaller screen sizes */
     }
@@ -104,11 +111,11 @@ html {
     }
     #check:checked~.icons #menu-icon {
         display: none; /* Hide the menu icon when the checkbox is checked */
-        font-size: 2.5rem;
+        
     }
     .icons #close-icon {
         display: none; /* Hide the close icon by default */
-        font-size: 2.5rem;
+       
     }
     #check:checked~.icons #close-icon {
         display: block; /* Display the close icon when the checkbox is checked */
