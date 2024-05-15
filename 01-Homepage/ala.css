@@ -89,14 +89,15 @@ html {
 .icons {
     position: absolute; /* Absolute positioning */
     right: 5%; /* Distance from the right */
-    color: var(--light);
+    color: var(--black);
     cursor: pointer; /* Change cursor to pointer on hover */
     display: none; /* Hide the icons by default */
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
     .icons {
         display: inline-flex; /* Display icons as inline-flex at smaller screen sizes */
+        font-size: 2.5rem;
     }
     #check:checked~.navlinks {
         height: 30rem;
