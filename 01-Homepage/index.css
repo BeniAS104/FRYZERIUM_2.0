@@ -348,11 +348,15 @@ line-height: normal;
 
   .testimonials {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    max-width: 90%;
+    width: 90%;
+    align-self: center;
+    margin: 0 auto;
   }
   .testi-heading {
+    text-align: center;
     font-size: 2.25rem;
     font-style: normal;
     font-weight: 400;
@@ -367,6 +371,7 @@ line-height: normal;
   }
 .testi-wrapper {
     display: flex;
+    justify-content: center;
 }
 .testi-card:nth-child(3) {
     margin-inline: 2rem;
@@ -374,13 +379,127 @@ line-height: normal;
 .bottom-quote {
     width: fit-content;
     align-self: flex-end;
-
+    
+}
+.bottom-quote img, .top-quote img {
+    width: 8vw;
+    height: auto;
 }
 .testi-card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--beige);
-    height: 20rem;
-    max-width: fit-content;
-    padding: 2.62rem 1.88rem;
+    height: 23rem;
+    width: 20%;
+    padding: 2.30rem 1.88rem;
+}
+.testi-card-text {
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+.testi-stars {
+    margin-top: 2rem;
+}
+.testi-container {
+    margin-bottom: 4rem;
+}
+.testi-user-name { 
+    margin-top: auto;
+}
+.testi-reviews-button {
+    display: inline-flex;
+    padding: 1.25rem 2.5rem;
+    color: var(--white);
+    background-color: var(--brown);
 }
 
-  
+@media screen and (max-width: 1300px) {
+    .bottom-quote img, .top-quote img {
+        display: none;
+    }
+    .testi-card {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--beige);
+        height: 23rem;
+        width: 25%;
+        padding: 2.30rem 1.88rem;
+    }
+}
+@media screen and (max-width: 898px) {
+    .testi-text {
+        text-align: center;
+    }
+    .testi-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+        .testi-card {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--beige);
+            height: 15rem;
+            width: 80%;
+            padding: 1.8rem 1.88rem;
+        }
+}
+
+@media screen and (max-width: 898px) {
+    .testi-card:nth-child(4) {
+        height: 18rem;
+    }
+
+ }
+
+
+ @media screen and (max-width: 898px) {
+ .testi-reviews-button {
+    display: inline-flex;
+    text-align: center;
+    padding: 1.25rem 2.5rem;
+    color: var(--white);
+    background-color: var(--brown);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
