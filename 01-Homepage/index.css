@@ -41,6 +41,7 @@
     position: absolute;
     bottom: 5%; /* Adjust the distance from the bottom as needed */
     z-index: 1;
+    cursor: pointer;
 }
 .chevron-down p {
     color: var(--white);
@@ -96,10 +97,11 @@
     .hero-text p{
         font-size: var(--text);
         line-height: 1.5rem;
+        padding-inline: 2rem;
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 437px) {
     .hero-text {
        top: 30%;
     }
@@ -108,5 +110,180 @@
     }
     .hero-text h1{
         font-size: var(--subheading);
+        margin-bottom: 1rem;
+    }
+    .hero-text p{
+        font-size: var(--text);
+        line-height: 1.5rem;
+        padding-inline: none;
     }
  }
+
+ /* home-services section */
+.home-services {
+    margin-top: 7.5rem;
+
+}
+.heading-services {
+    font-size: var(--heading);
+    font-family: var(--seasonsbold);
+    text-align: center;
+    margin-bottom: 2.25rem;
+}
+.heading-services-wrapper {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    gap: 2rem;
+}
+.home-services-img-container {
+    position: relative; 
+    width: 35%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    padding: 2.5rem 2.5rem 5rem 2.5rem;
+}
+.home-services-img-container h4 {
+    font-family: var(--seasonsbold);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.home-services-img-container span {
+    font-style: normal;
+font-weight: 400;
+line-height: normal;
+    font-size: 1.5rem;
+}
+.home-services-img-container p {
+    margin-bottom: 1rem;
+    margin-left: 30px;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.home-services-last-p {
+    margin-bottom: 3rem !important;
+}
+#hscontainer1 {
+    background-image: url(images/servicesimg1.png);
+    margin-bottom: 70px;
+}
+#hscontainer2 {
+    background-image: url(images/servicesimg2.png);
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 1174px) {
+    .heading-services-wrapper {
+        flex-direction: column;
+        gap:0;
+    }
+    .home-services-img-container {
+        text-align: center;
+        align-items: center;
+        position: relative; 
+        width: 55%;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        padding: 4rem 2.5rem 5rem 2.5rem;
+    }
+    .home-services-img-container p {
+        
+        margin-left: 0;
+    }
+    #hscontainer1 {
+
+        margin-bottom: 30px;
+    }
+    #hscontainer2 {
+        
+        margin-top: 30px;
+    }
+ }
+ @media screen and (max-width: 645px) {
+    .home-services-img-container {
+        width: 70%;
+    }
+  }
+  
+.home-services-last-container {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.know-more {
+    font-size: 1.5rem;
+    font-family: var(--seasonsbold);
+    margin-bottom: 2.5rem;
+}
+.know-more-button {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1.25rem 2.5rem;
+}
+ /* GALLERY SECTION */
+
+ /* WHO ARE WE SECTION */
+
+.who-are-we {
+    margin-top: 9rem;
+    background: url(./images/team.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 75vh;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--white);
+}
+.who-are-we-container {
+    width: 27%;
+    margin-right: 6rem;
+}
+.who-are-we-heading {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    font-family: var(--seasonsbold);
+    margin-bottom: 2.8rem;
+}
+.who-are-we-text {
+    font-size: 1.5rem;
+    line-height: 2.1875rem; /* 145.833% */
+    margin-bottom: 4.05rem;
+}
+.who-are-we-button {
+    padding: 1.25rem 2.5rem;
+    background-color: var(--gold);
+    color: var(--white);
+}
+
+@media screen and (max-width: 1203px) {
+    .who-are-we {
+        background-position: left;
+        align-items: center;
+     }
+     .who-are-we-container {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80rem;
+    }
+    .who-are-we-container h1 , .who-are-we-container p {
+        color: var(--black);
+    }
+    .who-are-we-button {
+        background-color: var(--brown);
+        
+        
+    }
+
+  }
