@@ -6,6 +6,10 @@
     background-size:cover;
     background-position: center;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .hero-overlay {
     position: absolute;
@@ -18,6 +22,7 @@
 .hero-text {
     position: absolute;
     color: var(--white);
+    z-index: 1; /* Ensure text appears above overlay */
 }
 .hero-text h1 {
     font-size: var(--huge-heading);
@@ -28,7 +33,22 @@
     font-size: var(--subheading);
     line-height: var(--line-height-subheading);
 }
-
+/* Chevron Down Icon and "See More" text */
+.chevron-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 5%; /* Adjust the distance from the bottom as needed */
+    z-index: 1;
+}
+.chevron-down p {
+    color: var(--white);
+}
+.chevron-down i {
+    font-size: var(--subheading);
+    color: var(--white);
+}
 /* For huge desktop */
 @media screen and (min-width: 1500px) {
     .hero-text {
@@ -67,8 +87,8 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-       top: 30%;
-       padding: 0 4rem;
+        top: 30%;
+        padding: 0 4rem;
     }
     .hero-text h1{
         font-size: var(--heading);
@@ -79,8 +99,14 @@
     }
 }
 
-@media screen and (width < 350px) {
+@media screen and (max-width: 376px) {
     .hero-text {
-       top: 20%;
+       top: 30%;
+    }
+    .chevron-down {
+        display: none;
+    }
+    .hero-text h1{
+        font-size: var(--subheading);
     }
  }
