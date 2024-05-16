@@ -82,6 +82,9 @@ html {
     align-items: center; /* Align items vertically at the center */
     transition: 0.6s; /* Add a transition effect */
     z-index: 100; /* Stack above other elements */
+    -webkit-box-shadow: 0 3px 5px rgba(23, 19, 11, 0.2);
+  -moz-box-shadow: 0 3px 5px rgba(23, 19, 11, 0.2);
+  box-shadow: 0 3px 5px rgba(23, 19, 11, 0.2);
 }
 .logo {
     max-width: 10rem;
