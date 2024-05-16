@@ -26,7 +26,7 @@
 }
 .hero-text h1 {
     font-size: var(--huge-heading);
-    font-family: var(--seasonsregular);
+    font-family: var(--seasonsbold);
     margin-bottom: var(--margin-45px);
 }
 .hero-text p {
