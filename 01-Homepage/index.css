@@ -229,7 +229,7 @@ line-height: normal;
 }
  /* GALLERY SECTION */
 
- /* WHO ARE WE SECTION + NASHI ARGAN PRODUCTS */
+ /* WHO ARE WE SECTION */
 
 .who-are-we {
     margin-top: 9rem;
@@ -240,7 +240,7 @@ line-height: normal;
     background-position: center top;
     display: flex;
     flex-direction: column;
-  
+    align-items: flex-end;
     justify-content: center;
     color: var(--white);
 }
@@ -311,9 +311,6 @@ line-height: normal;
         background-repeat: no-repeat;
         background-size:100%;
      }
-     .product-section {
-        background: url(/01-Homepage/images/products2.png);
-     }
      .who-are-we-repair {
         margin-top: 3rem;
     }
@@ -346,6 +343,7 @@ line-height: normal;
          
          
   }
+
   /* TESTIMONIALS */
 
   .testimonials {
@@ -464,7 +462,12 @@ line-height: normal;
     background-color: var(--brown);
 }
 }
-/* PRODUCTS */
+
+
+
+
+
+
 
 
 
