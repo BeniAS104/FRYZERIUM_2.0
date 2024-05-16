@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'SeasonsRegular';
-    src: url('./Fonts/Fontspring-DEMO-theseasons-reg.woff') format('woff');
+    src: url('Fonts/Fontspring-DEMO-theseasons-reg.woff') format('woff');
 }
 
 @font-face {
     font-family: "SeasonsBold";
-    src: url('../Fonts/Fontspring-DEMO-theseasons-bd.woff') format('woff');
+    src: url('Fonts/Fontspring-DEMO-theseasons-bd.woff') format('woff');
 }
 
 /* ROOT VARIABLES */
@@ -52,11 +52,11 @@ body {
     font-family: var(--montserrat);
     margin-top: auto; /*necessary for footer */
 }
-.container {
+.footer-container {
     max-width: 100%;
     color: var(--white);
 }
-.row {
+.footer-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -103,27 +103,27 @@ body {
         display: block;
 
 }
-#address {
+#footeraddress {
     line-height: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 4.15rem;
 }
-.socials {
+.footer-socials {
     display: flex;
     gap:1.75rem;
 }
-.openinghours {
+.footer-opening-hours {
     display: flex;
     justify-content: space-between;
     line-height: 1.5rem;
 }
-.hours {
+.footer-hours {
     margin-left: 2rem;
 }
-.parkingcolumn {
+.footer-parkingcolumn {
     width: 13.9375rem;
 }
-.parking {
+.footerparking {
     line-height: 1.5rem; /* 150% */
     letter-spacing: 0.02rem;
 }
@@ -135,11 +135,11 @@ body {
         min-height: 25rem;
         font-family: var(--montserrat);
     }
-    .container {
+    .footer-container {
         max-width: 100%;
         color: var(--white);
     }
-    .row {
+    .footer-row {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -149,7 +149,7 @@ body {
         width: 50%;
         max-height: none;
     }
-    .openinghours {
+    .footer-opening-hours {
         justify-content: space-evenly;
         
     }
@@ -161,14 +161,14 @@ body {
         margin-bottom: 3rem;
     }
 
-    .parking {
+    .footerparking {
         padding-inline: 1rem;
         width: 13.9375rem;
         text-align: center;
     }
 }
 @media (max-width:728px) {
-        .row {
+        .footer-row {
             flex-direction: column;
             
         }
@@ -178,10 +178,10 @@ body {
         .ohtext {
             display: block;
         }
-        .parking {
+        .footerparking {
             text-align: center;
         }
-        .openinghours {
+        .footer-opening-hours {
             width: 13.9375rem;
         }
  }
