@@ -243,6 +243,7 @@
     background-color: var(--brown);
     color: var(--white);
     padding: 1.25rem 2.5rem;
+    border: none;
 }
 
 /* For mobile */
