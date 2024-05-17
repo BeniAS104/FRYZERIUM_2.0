@@ -35,3 +35,17 @@
         left: 10%;
     }
 }
+/*=============== INTRODUCTION ===============*/
+.introduction-to-about-us {
+    text-align: center;
+    margin: 120px auto;
+    max-width: 900px;
+    line-height: 24px;
+}
+.mission-heading {
+    font-family: var(--seasonsbold);
+    font-size: var(--heading);
+    color: var(--black);
+    margin-bottom: var(--margin-45px);
+    text-align: center;
+}
