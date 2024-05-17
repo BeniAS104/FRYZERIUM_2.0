@@ -444,15 +444,12 @@ line-height: normal;
             padding: 1.8rem 1.88rem;
         }
 }
-
 @media screen and (max-width: 898px) {
     .testi-card:nth-child(4) {
         height: 18rem;
     }
 
  }
-
-
  @media screen and (max-width: 898px) {
  .testi-reviews-button {
     display: inline-flex;
@@ -462,16 +459,196 @@ line-height: normal;
     background-color: var(--brown);
 }
 }
+@media screen and (max-width: 506px) {
+    .testi-reviews-button {
+       width: 80%;
+   }
+}
+/* NASHI ARGAN PRODCUTS */
+.product-section {
+    margin-top: 9rem;
+    background: url(./images/products.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 75vh;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--white);
+}
+.product-container {
+    width: 27%;
+    margin-left: 6rem;
+}
+.product-heading {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    font-family: var(--seasonsbold);
+    margin-bottom: 2.8rem;
+}
+.product-text {
+    font-size: 1.5rem;
+    line-height: 2.1875rem; /* 145.833% */
+    margin-bottom: 4.05rem;
+}
+.product-button {
+    padding: 1.25rem 2.5rem;
+    background-color: var(--gold);
+    color: var(--black);
+}
+.product-repair {
+    display: none;
+    
+}
 
+@media screen and (max-width: 1203px) {
+     .product-section .product-container {
+        display: none;
+     }
+     .product-repair {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    
+     .product-container {
+        width: 60%;
+        text-align: center;
+        margin-left: 0;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .product-container h1 , .product-container p {
+        color: var(--black);
+    }
+    .product-button {
+        background-color: var(--brown);
+        color: var(--white);
+    }
+  }
+  @media screen and (max-width: 858px)
+  {
+    .product-section {
+        background: url(/01-Homepage/images/products2.png);
+        background-repeat: no-repeat;
+        background-size:100%;
+     }
+    
+  }
 
+  @media screen and (max-width: 616px) {
+    .product-section {
+        margin-top: 6.5rem;
+        background: url(/01-Homepage/images/products2.png);
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size:100%;
+     }
+     .product-repair {
+        margin-top: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 568px) { 
+    .product-repair {
+        margin-top: 0;
+    }
+  }
 
+  @media screen and (max-width: 538px) { 
+    .product-section {
+        height: 65vh;
+    }
+  }
 
+  @media screen and (max-width: 460px) { 
+    .product-section {
+        height: 55vh;
+    }
+  }
 
+  @media screen and (max-width: 380px) { 
+    .product-section {
+        height: 50vh;
+    }
+  }
+/* INSTAGRAM */
+.instagram-embed {
+    margin-top: 10%;
+}
+.instagram-media {
+    max-width: 340px !important;
+  }
+.mySwiper {
+    margin: 0 auto;
+}
+swiper-container {
+    width: 32%;
+    height: fit-content;
+  }
 
+  swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  swiper-slide {
+    background-color: var(--white);
+  }
+  @media screen and (max-width: 1350px) { 
+    swiper-container {
+        width: 40% !important;
 
+      }
+  }
+  @media screen and (max-width: 1119px) { 
+    swiper-container {
+        width: 50% !important;
 
+      }
+  }
+  @media screen and (max-width: 923px) { 
+    swiper-container {
+        width: 60% !important;
 
+      }
+  }
+  @media screen and (max-width: 744px) { 
+    swiper-container {
+        width: 70% !important;
 
+      }
+  }
+
+  @media screen and (max-width: 630px) { 
+    swiper-container {
+        width: 80% !important;
+      }
+  }
+  @media screen and (max-width: 537px) { 
+    swiper-container {
+        width: 90% !important;
+      }
+  }
+  @media screen and (max-width: 470px) { 
+    swiper-container {
+        width: 100% !important;
+      }
+  }
+  @media screen and (max-width: 415px) { 
+    .instagram-embed {
+        display: none;
+      }
+  }
 
 
 
