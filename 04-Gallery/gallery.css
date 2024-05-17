@@ -41,7 +41,7 @@
     max-width: 1490px;
     width: 90%;
     margin: auto;
-    padding: 150px 0;
+    padding: 120px 0 150px 0;
     text-align: center;
 }
 .recent-work h2 {
@@ -240,9 +240,10 @@
     margin-bottom: 2.5rem;;
 }
 .call-to-action button {
-background-color: var(--brown);
+    background-color: var(--brown);
     color: var(--white);
     padding: 1.25rem 2.5rem;
+    border: none;
 }
 
 /* For mobile */

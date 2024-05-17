@@ -35,3 +35,161 @@
         left: 10%;
     }
 }
+
+/*=============== CONTACT INFORMATION ===============*/
+.contact-information {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    padding: 120px 0 150px 0;
+    text-align: center;
+}
+.contact-information h2 {
+    font-family: var(--seasonsbold);
+    font-size: var(--heading);
+    color: var(--black);
+    margin-bottom: var(--margin-45px);
+}
+.contact-information-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.contact-information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .contact-information {
+        padding: 10% 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-information {
+        padding: 10% 5%;
+    }
+    .contact-information h2 {
+        font-size: var(--subheading);
+    }
+}
+
+/*=============== CONTACT INFORMATION CARDS ===============*/
+.contact-information-cards {
+    gap: 2%;
+    display: flex;
+    margin: 0 10%;
+    margin-bottom: 120px;
+}
+.information-card {
+    background: var(--beige);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5%;
+}
+.information-card img {
+    max-width: 40%;
+}
+.information-card p {
+    text-align: center;
+}
+.information-card button {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1.25rem 2.5rem;
+    border: none;
+}
+
+@media (max-width: 992px) {
+    .contact-information-cards {
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .information-card {
+        margin: 2% 0;
+        padding: 10% 5%;
+    }
+    .information-card button {
+        padding: 1rem 2rem;
+    }
+    .information-card img {
+        max-width: 40%;
+    }
+}
+
+/*=============== OPENING HOURS ===============*/
+.opening-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.opening-hours h2 {
+    font-family: var(--seasonsbold);
+    font-size: var(--heading);
+    color: var(--black);
+    margin-bottom: var(--margin-45px);
+}
+.opening-hours-container {
+    display: flex;
+    gap: 6rem;
+}
+.opening-hours-container ul {
+    list-style: none;
+    line-height: 2rem;
+}
+
+@media (max-width: 600px) {
+    .opening-hours h2 {
+        font-size: var(--subheading);
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 320px) {
+    .opening-hours-container {
+        gap: 4rem;
+    }
+}
+/*=============== GOOGLE MAP ===============*/
+.google-map {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 120px auto 60px;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+}
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+#map-section-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1.25rem 2.5rem;
+    border: none;
+    margin: auto;
+    margin-bottom: 230px;
+}
+
+@media (max-width: 600px) {
+    .google-map {
+        margin-top: 10%;
+    }
+    #map-section-button {
+        margin-bottom: 20%;
+    }
+}
