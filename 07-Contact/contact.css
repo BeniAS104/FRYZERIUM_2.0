@@ -103,6 +103,7 @@
     color: var(--white);
     padding: 1.25rem 2.5rem;
     border: none;
+    cursor: pointer;
 }
 
 @media (max-width: 992px) {
@@ -183,6 +184,7 @@
     border: none;
     margin: auto;
     margin-bottom: 230px;
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {

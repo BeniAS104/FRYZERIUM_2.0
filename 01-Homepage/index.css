@@ -105,7 +105,7 @@
 @media screen and (max-width: 437px) {
     .hero-text {
        top: 30%;
-       padding: 0 3rem;
+       padding: 0 2rem;
     }
     .chevron-down {
         display: none;
@@ -119,12 +119,18 @@
         line-height: 1.5rem;
         padding-inline: none;
     }
- }
+}
+
+/* For very small mobile */
+@media screen and (max-width: 320px) {
+    .hero-text {
+        top: 20%;
+    }
+}
 
  /* home-services section */
 .home-services {
     margin-top: 7.5rem;
-
 }
 .heading-services {
     font-size: var(--heading);
@@ -204,33 +210,106 @@ line-height: normal;
         margin-top: 30px;
     }
  }
- @media screen and (max-width: 645px) {
-    .home-services-img-container {
-        width: 70%;
-    }
-  }
-  
-.home-services-last-container {
+ .home-services-last-container {
     margin-top: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+ @media screen and (max-width: 645px) {
+    .home-services-img-container {
+        width: 90%;
+    }
+}
+  
+@media (max-width: 600px) {
+    .home-services {
+        margin-top: 20%;
+    }
+    .heading-services {
+        font-size: var(--subheading);
+    }
+    .home-services-last-container {
+        margin-top: 20%;
+    }
+    .home-services-img-container h4 {
+        font-size: var(--subheading);
+    }
+    .home-services-img-container p {
+        font-size: var(--text);
+    }
+    .home-services-img-container {
+        padding: 4rem 1rem 5rem 1rem;
+    }
+}
+
 .know-more {
     font-size: 1.5rem;
     font-family: var(--seasonsbold);
     margin-bottom: 2.5rem;
+    text-align: center;
 }
 .know-more-button {
     background-color: var(--brown);
     color: var(--white);
     padding: 1.25rem 2.5rem;
 }
+
  /* GALLERY SECTION */
+ .recent-work {
+    max-width: 1490px;
+    width: 90%;
+    margin: auto;
+    padding: 120px 0 60px 0;
+    text-align: center;
+}
+.recent-work h2 {
+    font-family: var(--seasonsbold);
+    font-size: var(--heading);
+    color: var(--black);
+    margin: auto;
+    margin-bottom: var(--margin-60px);
+}
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.see-gallery-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .recent-work {
+        padding: 15% 0;
+    }
+    .recent-work h2 {
+        font-size: var(--subheading);
+        margin-bottom: 10%;
+    }
+    .photo-gallery {
+        gap: 10px;
+    }
+    .column {
+        gap: 10px;
+    }
+}
 
  /* WHO ARE WE SECTION */
-
 .who-are-we {
     margin-top: 9rem;
     background: url(./images/team.png);
@@ -319,17 +398,24 @@ line-height: normal;
     .who-are-we-repair {
         margin-top: 0;
     }
+    .who-are-we-heading {
+        font-size: var(--subheading);
+    }
+    .who-are-we-text {
+        font-size: var(--text);
+        line-height: 24px;
+    }
   }
 
-  @media screen and (max-width: 493px) { 
+  @media screen and (max-width: 600px) { 
     .who-are-we {
-        height: 65vh;
+        height: 60vh;
     }
   }
 
   @media screen and (max-width: 460px) {
     .who-are-we {
-        height: 60vh;
+        height: 50vh;
     }
      
      .who-are-we-text {
@@ -338,11 +424,9 @@ line-height: normal;
 }
     @media screen and (max-width: 390px) {
         .who-are-we {
-            height: 55vh;
+            height: 40vh;
         }
-         
-         
-  }
+}
 
   /* TESTIMONIALS */
 
@@ -463,6 +547,20 @@ line-height: normal;
     .testi-reviews-button {
        width: 80%;
    }
+   .testi-heading {
+    font-size: var(--subheading);
+    }
+    .testi-text {
+        font-size: var(--text);
+        padding: 0 5%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .testi-card-text {
+        font-size: 14px;
+        line-height: 1.2rem;
+        font-weight: 500;
+    }
 }
 /* NASHI ARGAN PRODCUTS */
 .product-section {
@@ -560,26 +658,38 @@ line-height: normal;
     }
   }
 
-  @media screen and (max-width: 538px) { 
+  @media screen and (max-width: 600px) { 
     .product-section {
-        height: 65vh;
+        height: 60vh;
     }
   }
 
+  @media screen and (max-width: 415px) { 
+    .product-button {
+        margin-bottom: 30%;
+      }
+  }
   @media screen and (max-width: 460px) { 
     .product-section {
-        height: 55vh;
+        height: 50vh;
+    }
+    .product-heading {
+        font-size: var(--subheading);
     }
   }
 
   @media screen and (max-width: 380px) { 
     .product-section {
-        height: 50vh;
+        height: 40vh;
+    }
+    .product-text {
+        font-size: var(--text);
+        line-height: 24px;
     }
   }
 /* INSTAGRAM */
 .instagram-embed {
-    margin-top: 10%;
+    margin: 10% 0;
 }
 .instagram-media {
     max-width: 340px !important;
@@ -650,7 +760,32 @@ swiper-container {
       }
   }
 
+/*=============== CTA SECTION ===============*/
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 230px;
+}
+.call-to-action h3 {
+    font-family: var(--seasonsbold);
+    font-size: var(--subheading);
+    margin-bottom: 2.5rem;;
+}
+.call-to-action button {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1.25rem 2.5rem;
+    border: none;
+    cursor: pointer;
+}
 
+/* For mobile */
+@media screen and (max-width: 600px) {
+    .call-to-action {
+        margin-bottom: 20%;
+    }
+}
 
 
 

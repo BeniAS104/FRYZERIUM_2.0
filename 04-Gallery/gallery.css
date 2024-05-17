@@ -244,6 +244,7 @@
     color: var(--white);
     padding: 1.25rem 2.5rem;
     border: none;
+    cursor: pointer;
 }
 
 /* For mobile */
