@@ -35,3 +35,75 @@
         left: 10%;
     }
 }
+
+/*=============== BOOK YOUR APPOINTMENT TODAY ===============*/
+.book-appointment {
+    max-width: 800px;
+    margin: 120px auto 150px;
+}
+.book-appointment h2 {
+    font-family: var(--seasonsbold);
+    font-size: var(--heading);
+    color: var(--black);
+    margin-bottom: var(--margin-45px);
+    text-align: center;
+}
+.book-appointment p {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .book-appointment {
+        margin: 10% 5%;
+    }
+    .book-appointment h2 {
+        font-size: var(--subheading);
+        left: 10%;
+    }
+}
+
+/*=============== BOOKING CARDS ===============*/
+.booking-cards {
+    gap: 2%;
+    display: flex;
+    margin: 0 10%;
+    margin-bottom: 120px;
+}
+.booking-card {
+    background: var(--beige);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5%;
+}
+.booking-card img {
+    max-width: 40%;
+}
+.booking-card p {
+    text-align: center;
+}
+.booking-card button {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1.25rem 2.5rem;
+    border: none;
+}
+
+@media (max-width: 992px) {
+    .booking-cards {
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .booking-card {
+        margin: 2% 0;
+        padding: 10% 5%;
+    }
+    .booking-card button {
+        padding: 1rem 2rem;
+    }
+    .information-card img {
+        max-width: 40%;
+    }
+}
