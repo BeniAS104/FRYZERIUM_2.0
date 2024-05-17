@@ -39,20 +39,25 @@
 /*=============== BOOK YOUR APPOINTMENT TODAY ===============*/
 .book-appointment {
     max-width: 800px;
-    margin: 120px auto 150px;
+    margin: 120px auto 120px;
 }
 .book-appointment h2 {
     font-family: var(--seasonsbold);
     font-size: var(--heading);
     color: var(--black);
     margin-bottom: var(--margin-45px);
+    margin: 0 auto;
+    max-width: 80%;
     text-align: center;
+    font-weight: 400;
 }
 .book-appointment p {
     text-align: center;
+    max-width: 80%;
+    margin: 2rem auto 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 615px) {
     .book-appointment {
         margin: 10% 5%;
     }
@@ -64,46 +69,100 @@
 
 /*=============== BOOKING CARDS ===============*/
 .booking-cards {
-    gap: 2%;
+  
     display: flex;
-    margin: 0 10%;
-    margin-bottom: 120px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25vh;
+
 }
 .booking-card {
+    box-sizing: border-box;
     background: var(--beige);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
     align-items: center;
-    padding: 10% 5%;
+    padding: 4rem 3rem;
+    height: 28rem;
+    width: 20rem;
+    justify-content: space-between;
+    margin-inline: 1%;
 }
-.booking-card img {
-    max-width: 40%;
+.two-carder {
+    display: inline-flex;  
 }
 .booking-card p {
     text-align: center;
+    max-width: 80%;
 }
-.booking-card button {
+.booking-card a button{
+    margin-top:auto;
     background-color: var(--brown);
     color: var(--white);
     padding: 1.25rem 2.5rem;
     border: none;
+    cursor: pointer;
 }
 
-@media (max-width: 992px) {
-    .booking-cards {
-        flex-direction: column;
-        margin-bottom: 10%;
+@media screen and (max-width: 1300px) {
+    .two-carder {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .two-carder:nth-child(1) {
+        justify-content: flex-end;
     }
     .booking-card {
-        margin: 2% 0;
-        padding: 10% 5%;
+        margin-bottom: 2%;
     }
-    .booking-card button {
+}
+@media screen and (max-width: 900px) {
+
+    .booking-card {
+        padding: 4rem 3rem;
+        height: 23rem;
+        width: 18rem;
+    }
+    .booking-card p {
+        margin: 1.5rem 0;
+        
+    }
+    .booking-card:nth-child(4) {
+        margin-bottom: 10rem;
+    }
+    .booking-card a  {
+        flex-grow: 1;
+        
+        
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .booking-card p {
+        margin: 1.5rem 0;
+        font-size: 0.9rem;
+        
+    }
+    .booking-card a button {
+        margin-top: auto;
         padding: 1rem 2rem;
+        
     }
-    .information-card img {
-        max-width: 40%;
+
+    .booking-cards {
+    
+        flex-direction: column;
+        align-items: center;
+    }
+    .booking-card {
+        padding: 4rem 4rem;
+        height: 23rem;
+        width: 70%;
+    }
+    
+    .two-carder {
+    align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
 }
