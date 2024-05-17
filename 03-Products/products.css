@@ -29,9 +29,123 @@
 @media screen and (max-width: 600px) {
     .hero-section {
         height: 30vh;
+        background-position: top;
     }
     .hero-section h1 {
         font-size: var(--subheading);
         left: 10%;
+    }
+}
+
+/*=============== NASHI ARGAN BACKGROUND ===============*/
+.nashi-argan-bg {
+    background-image: url(../06-About-Us/images/nashi-argan-bg.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height: 50vh;
+}
+.bg-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 12, 5, 0.6);
+}
+@media screen and (max-width: 600px) {
+    .nashi-argan-bg {
+        height: 30vh;
+    }
+}
+
+/*=============== NASHI ARGAN PRODUCTS AND DESCRIPTIONS ===============*/
+.products-and-descriptions {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.product {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+}
+.product aside {
+    margin-right: 10%;
+}
+.product h4{
+    font-size: var(--subheading);
+    font-weight: 500;
+    margin: var(--margin-45px) 0;
+}
+.product p {
+    line-height: 24px;
+    margin-bottom: var(--margin-45px);
+}
+.product img {
+    max-width: 400px;
+}
+#first-product {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    .products-and-descriptions {
+        padding: 0 2rem;
+    }
+    .product img {
+        max-width: 250px;
+    }
+    #first-product {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .product {
+        flex-direction: column;
+        padding: 5% 0 5%;
+        gap: 1rem;
+    }
+    .product aside {
+        margin: 0 2%;
+    }
+    .product img {
+        max-width: 300px;
+    }
+}
+
+/*=============== CTA SECTION ===============*/
+.call-to-action {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 230px;
+    margin-top: 60px;
+}
+.call-to-action h3 {
+    font-size: var(--subheading);
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    line-height: 35px;
+    text-align: center;
+}
+.call-to-action button {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1.25rem 2.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* For mobile */
+@media screen and (max-width: 600px) {
+    .call-to-action {
+        margin-top: 5%;
+        margin-bottom: 20%;
     }
 }
