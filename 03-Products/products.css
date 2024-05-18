@@ -41,9 +41,9 @@
 .products-shortcut {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts number of columns based on screen width */
-    gap: 20px; /* Space between items */
+    gap: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
     padding: 120px 20px 60px 20px;
 }
 
@@ -55,10 +55,10 @@
 }
 
 .product-shortcut img {
-    width: 100%; /* Make images responsive */
-    max-width: 150px; /* Limit the maximum width of images */
+    width: 100%;
+    max-width: 150px;
     height: auto;
-    margin-bottom: 10px; /* Space between image and text */
+    margin-bottom: 10px;
 }
 
 .product-shortcut h5 {
@@ -76,7 +76,7 @@
 .about-nashi-argan {
     max-width: 1000px;
     width: 90%;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
     margin-bottom: 150px;
 }
 .about-nashi-argan p {
@@ -206,6 +206,13 @@
     padding: 1.25rem 2.5rem;
     border: none;
     cursor: pointer;
+}
+.call-to-action button:hover {
+    background-color: var(--white);
+    color: var(--brown);
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
+    transition: 0.3s;
 }
 
 /* For mobile */

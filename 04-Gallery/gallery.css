@@ -246,6 +246,13 @@
     border: none;
     cursor: pointer;
 }
+.call-to-action button:hover {
+    background-color: var(--white);
+    color: var(--brown);
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
+    transition: 0.3s;
+}
 
 /* For mobile */
 @media screen and (max-width: 600px) {

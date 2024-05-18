@@ -121,6 +121,13 @@ html {
     background: var(--brown);
     color:var(--white);
 }
+.bookingButton:hover {
+    background: var(--white);
+    font-weight: 500;
+    color:var(--brown);
+    box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
+    transition: 0.3s;
+}
 #check {
     display: none; /* Hide the checkbox */
 }

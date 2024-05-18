@@ -243,6 +243,13 @@
     cursor: pointer;
     margin-bottom: 45px;
 }
+.about-nashi-argan button:hover {
+    background-color: var(--white);
+    color: var(--brown);
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
+    transition: 0.3s;
+}
 
 @media screen and (max-width: 800px) {
     .button-wrapper {

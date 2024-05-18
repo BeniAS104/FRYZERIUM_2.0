@@ -256,8 +256,15 @@ line-height: normal;
     color: var(--white);
     padding: 1.25rem 2.5rem;
 }
+.know-more-button:hover {
+    background-color: var(--white);
+    color: var(--brown);
+    font-weight: 500;
+    box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
+    transition: 0.3s;
+}
 
- /* GALLERY SECTION */
+/* GALLERY SECTION */
  .recent-work {
     max-width: 1490px;
     width: 90%;
@@ -341,8 +348,15 @@ line-height: normal;
 }
 .who-are-we-button {
     padding: 1.25rem 2.5rem;
+    font-weight: 500;
     background-color: var(--gold);
     color: var(--black);
+}
+.who-are-we-button:hover {
+    background-color: transparent;
+    color: var(--gold);
+    box-shadow: inset 0 0 0 1px var(--gold); /* Add an inner border */
+    transition: 0.3s;
 }
 .who-are-we-repair {
     display: none;
@@ -379,6 +393,12 @@ line-height: normal;
     .who-are-we-button {
         background-color: var(--brown);
         color: var(--white);
+    }
+    .who-are-we-button:hover {
+        background-color: transparent;
+        color: var(--brown);
+        box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
+        transition: 0.3s;
     }
   }
 
@@ -496,6 +516,13 @@ line-height: normal;
     color: var(--white);
     background-color: var(--brown);
 }
+.testi-reviews-button:hover {
+    background-color: var(--white);
+    color: var(--brown);
+    font-weight: 500;
+    box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
+    transition: 0.3s;
+}
 
 @media screen and (max-width: 1300px) {
     .bottom-quote img, .top-quote img {
@@ -595,7 +622,15 @@ line-height: normal;
 .product-button {
     padding: 1.25rem 2.5rem;
     background-color: var(--gold);
+    font-weight: 500;
     color: var(--black);
+}
+.product-button:hover {
+    background-color: transparent;
+    font-weight: 500;
+    color: var(--gold);
+    box-shadow: inset 0 0 0 1px var(--gold); /* Add an inner border */
+    transition: 0.3s;
 }
 .product-repair {
     display: none;
@@ -628,6 +663,12 @@ line-height: normal;
     .product-button {
         background-color: var(--brown);
         color: var(--white);
+    }
+    .product-button:hover {
+        background-color: transparent;
+        color: var(--brown);
+        box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
+        transition: 0.3s;
     }
   }
   @media screen and (max-width: 858px)
@@ -778,6 +819,13 @@ swiper-container {
     padding: 1.25rem 2.5rem;
     border: none;
     cursor: pointer;
+}
+.call-to-action button:hover {
+    background-color: var(--white);
+    color: var(--brown);
+    font-weight: 500;
+    border: solid 1px var(--brown);
+    transition: 0.3s;
 }
 
 /* For mobile */
