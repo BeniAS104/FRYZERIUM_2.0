@@ -3,13 +3,8 @@
 
 /*=============== CUSTOM FONTS ===============*/
 @font-face {
-    font-family: 'SeasonsRegular';
-    src: url('./Fonts/Fontspring-DEMO-theseasons-reg.woff') format('woff');
-}
-
-@font-face {
     font-family: "SeasonsBold";
-    src: url('../Fonts/Fontspring-DEMO-theseasons-bd.woff') format('woff');
+    src: url('Fonts/Fontspring-DEMO-theseasons-bd.woff') format('woff');
 }
 
 /*=============== VARIABLES CSS ===============*/

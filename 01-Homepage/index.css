@@ -589,7 +589,7 @@ line-height: normal;
         font-weight: 500;
     }
 }
-/* NASHI ARGAN PRODCUTS */
+/* NASHI ARGAN PRODUCTS */
 .product-section {
     margin-top: 9rem;
     background: url(./images/products.png);
@@ -810,7 +810,7 @@ swiper-container {
 }
 .call-to-action h3 {
     font-family: var(--seasonsbold);
-    font-size: var(--subheading);
+    font-size: var(--heading);
     margin-bottom: 2.5rem;;
 }
 .call-to-action button {
