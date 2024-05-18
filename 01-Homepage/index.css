@@ -817,6 +817,7 @@ swiper-container {
     background-color: var(--brown);
     color: var(--white);
     padding: 1.25rem 2.5rem;
+    border: solid 1px transparent;
     border: none;
     cursor: pointer;
 }
