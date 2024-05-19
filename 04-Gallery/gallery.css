@@ -1,6 +1,6 @@
 /*=============== HERO SECTION ===============*/
-.hero-section {
-    position: relative; /* relative positioning for absolute positioning of text */
+/* .hero-section {
+    position: relative; 
     background-image: url(images/hero-gallery.webp);
     background-repeat: no-repeat;
     background-size:cover;
@@ -14,7 +14,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(24, 12, 5, 0.7);
-}
+} */
 .hero-section h1 {
     position: absolute;
     color: var(--white);
@@ -90,7 +90,6 @@
     font-size: 2.25rem;
     font-weight: 400;
     font-family: var(--seasonsbold);
-    text-transform: uppercase;
     margin: 0 auto 50px;
     text-align: center;
 }

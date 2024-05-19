@@ -17,11 +17,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- Adds a Favicon -->
     <link
       rel="icon"
@@ -29,6 +25,58 @@
       sizes="32x32"
       href="./images/favicon.png"
     />
+    <style>
+      .hero-section {
+        position: relative;
+        background-image: url(images/hero\ 3.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(24, 12, 5, 0.8);
+      }
+      .hero-text {
+    position: absolute;
+    color: var(--white);
+    z-index: 1; 
+}
+.hero-text h1 {
+    font-size: var(--huge-heading);
+    font-family: var(--seasonsbold);
+    margin-bottom: var(--margin-45px);
+}
+.hero-text p {
+    font-size: var(--subheading);
+    line-height: var(--line-height-subheading);
+}
+.chevron-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 5%; 
+    z-index: 1;
+    cursor: pointer;
+}
+.chevron-down p {
+    color: var(--white);
+}
+.chevron-down i {
+    font-size: var(--subheading);
+    color: var(--white);
+}
+    </style>
   </head>
   <body>
     <!-- Header Section -->
@@ -36,7 +84,7 @@
       <!-- Logo -->
       <a href="../01-Homepage/index.html">
         <img
-          src="./images/logov4.png"
+          src="./images/logov4.webp"
           alt="Logo of FRYZERIUM 2.0"
           class="logo"
         />
@@ -90,12 +138,12 @@
           </p>
         </div>
         <!-- Chevron Down Icon -->
-        <div class="chevron-down">
+        <a href="#scroller" class="chevron-down">
           <p>SEE MORE</p>
-          <i class="bx bx-chevron-down"></i>
-        </div>
+          <i class="bx bx-chevron-down"></i></a>
+       
       </section>
-      <section class="home-services">
+      <section class="home-services" id="scroller">
         <p class="heading-services">SERVICES</p>
         <div class="heading-services-wrapper">
           <div class="home-services-img-container" id="hscontainer1">
@@ -137,28 +185,28 @@
         <div class="photo-gallery">
             <div class="column">
                 <div class="photo">
-                    <img src="../04-Gallery/images/recent-work1.webp" alt="Brown wavy hair treatment at Fryzerium2.0 in Myslenice.">
+                    <img src="../04-Gallery/images/recent-work1.webp" alt="Brown wavy hair treatment at Fryzerium2.0 in Myslenice." loading="lazy">
                 </div>
                 <div class="photo">
-                    <img src="../04-Gallery/images/recent-work2.webp" alt="Blonde wavy hair treatment at Fryzerium2.0 in Myslenice.">
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="photo">
-                    <img src="../04-Gallery/images/recent-work3.webp" alt="Blonde keratin straightening hair treatment at Fryzerium2.0 in Myslenice.">
-                </div>
-                <div class="photo">
-                    <img src="../04-Gallery/images/recent-work4.webp" alt="Baleyage blonde on wavy hair treatment at Fryzerium2.0 in Myslenice.">
+                    <img src="../04-Gallery/images/recent-work2.webp" alt="Blonde wavy hair treatment at Fryzerium2.0 in Myslenice." loading="lazy">
                 </div>
             </div>
 
             <div class="column">
                 <div class="photo">
-                    <img src="../04-Gallery/images/recent-work5.webp" alt="Blonde toning on wavy hair treatment at Fryzerium2.0 in Myslenice.">
+                    <img src="../04-Gallery/images/recent-work3.webp" alt="Blonde keratin straightening hair treatment at Fryzerium2.0 in Myslenice." loading="lazy">
                 </div>
                 <div class="photo">
-                    <img src="../04-Gallery/images/recent-work6.webp" alt="Cool blonde hair dye at Fryzerium2.0 in Myslenice on long hair.">
+                    <img src="../04-Gallery/images/recent-work4.webp" alt="Baleyage blonde on wavy hair treatment at Fryzerium2.0 in Myslenice." loading="lazy">
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="photo">
+                    <img src="../04-Gallery/images/recent-work5.webp" alt="Blonde toning on wavy hair treatment at Fryzerium2.0 in Myslenice." loading="lazy">
+                </div>
+                <div class="photo">
+                    <img src="../04-Gallery/images/recent-work6.webp" alt="Cool blonde hair dye at Fryzerium2.0 in Myslenice on long hair." loading="lazy">
                 </div>
             </div>
         </div>
@@ -381,9 +429,9 @@ I haven't been so satisfied with a hairdresser for a long time. I will definitel
       </div>
     </footer>
     <!-- END OF FOOTER -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script async src="//www.instagram.com/embed.js"></script>
-    <script src="index.js"></script>
-    <script src="../js.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script defer src="//www.instagram.com/embed.js"></script>
+    <script async src="index.js"></script>
+    <script async src="../js.js"></script>
   </body>
 </html>

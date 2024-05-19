@@ -5,6 +5,7 @@
 @font-face {
     font-family: "SeasonsBold";
     src: url('Fonts/Fontspring-DEMO-theseasons-bd.woff') format('woff');
+    font-display: swap;
 }
 
 /*=============== VARIABLES CSS ===============*/
