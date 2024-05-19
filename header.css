@@ -105,9 +105,10 @@ html {
     background: var(--black);
     transition: .3s;
 }
-.navlinks a:not(.no-hover-effect):hover::before {
+.navlinks a:not(.no-hover-effect):hover::before,
+.navlinks a.active::before {
     width: 100%;
-}
+ }
 .bookingButton {
     display: flex;
     padding: 1rem;
