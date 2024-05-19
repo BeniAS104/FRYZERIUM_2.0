@@ -1,0 +1,61 @@
+/* Error Page Styling */
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.error-page h2 {
+    font-size: 48px;
+    font-family: var(--seasonsbold);
+    margin: 10px 0;
+}
+
+.error-page p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.error-page h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.error-page a {
+    text-decoration: none;
+}
+
+.error-page button {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1.25rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 45px;
+}
+
+.error-page button:hover {
+    background-color: var(--white);
+    color: var(--brown);
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--brown);
+}
+
+@media (max-width: 768px) {
+    .error-page h1 {
+        font-size: 4rem;
+    }
+    .error-page h2 {
+        font-size: 2rem;
+    }
+    .error-page p, .error-page h3 {
+        font-size: 1rem;
+    }
+}
