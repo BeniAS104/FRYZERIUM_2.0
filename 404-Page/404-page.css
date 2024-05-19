@@ -11,19 +11,19 @@
 }
 
 .error-page h2 {
-    font-size: 48px;
+    font-size: var(--huge-heading);
     font-family: var(--seasonsbold);
     margin: 10px 0;
 }
 
-.error-page p {
-    font-size: 24px;
+.error-page h3 {
+    font-size: var(--text);
+    font-weight: 400;
     margin: 20px 0;
 }
 
-.error-page h3 {
-    font-size: 24px;
-    font-weight: 600;
+.error-page p {
+    font-size: var(--subheading);
     margin: 20px 0;
 }
 
