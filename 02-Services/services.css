@@ -118,11 +118,7 @@
     transition: 0.5s;
 
 }
-.service:hover {
-    outline: 1px solid var(--black); /* Creates a border-like effect outside */
-    outline-offset: 15px; /* Adjust this value to control how far the outline extends */
 
-}
 .namendesc {
     display: flex;
     flex-direction: column;
@@ -261,7 +257,8 @@ margin: 0 auto;
     font-size: 1.5rem;
 font-style: normal;
 font-weight: 400;
-line-height: 3.125rem;
+line-height: 35px;
+font-family: var(--seasonsbold);
 text-align: center;
 }
 
