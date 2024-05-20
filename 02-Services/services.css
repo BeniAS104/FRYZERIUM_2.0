@@ -114,13 +114,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    outline: 1px solid transparent;
+    transition: 0.5s;
+
+}
+.service:hover {
+    outline: 1px solid var(--black); /* Creates a border-like effect outside */
+    outline-offset: 15px; /* Adjust this value to control how far the outline extends */
 
 }
 .namendesc {
     display: flex;
     flex-direction: column;
     max-width: 45%;
-    gap:3vh;
+    gap:1.5vh;
 }
 .name {
     font-size: 1.5rem;
@@ -132,6 +139,7 @@
 font-style: normal;
 font-weight: 300;
 line-height: 1.5rem;
+
 }
 .dura {
     display: flex;
@@ -147,7 +155,63 @@ line-height: 1.5rem;
 }
 
 
+@media (max-width: 738px) {
 
+    .namendesc {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        gap:4vw;
+    }
+    .dura, .price {
+        margin-top: 5vh;
+    }
+}
+@media (max-width: 738px) {
+    .service {
+        flex-wrap: wrap;
+    }
+    .namendesc {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        gap:4vw;
+    }
+    .dura, .price {
+        margin-top: 5vh;
+    }
+}
+@media (max-width: 604px) {
+    .services {
+        max-width: 90%;
+    }
+    .names p:nth-child(2),.names p:nth-child(3) {
+        display: none;
+    }
+    
+    .names p {
+        margin-inline: auto;
+    }
+    .service {
+        flex-wrap: wrap;
+    }
+    .name {
+        font-size: 1rem;
+    }
+    .desc {
+        font-size: 0.75rem;
+    }
+    .namendesc {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        gap:4vw;
+    }
+    .dura svg,.dura p, .price p {
+        margin-top: 5vh;
+        
+    }
+}
 
 
 

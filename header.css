@@ -185,3 +185,11 @@ html {
         height: 33rem; /* height of the drop-down beige navbar */
     }
 }
+
+/* General focus style */
+:focus {
+    outline: 2px solid #BB3B0E;
+    outline-offset: 3px;
+    transition: .2s;
+  }
+  
