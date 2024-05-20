@@ -81,6 +81,10 @@
   <body>
     <!-- Header Section -->
     <header class="header">
+
+      <!-- skip to content button (invisible until using tab) -->
+      <a href="#main-content" class="know-more-button" id="skip-to-content-button">SKIP TO CONTENT</a>
+
       <!-- Logo -->
       <a href="../01-Homepage/index.html">
         <img
@@ -132,7 +136,7 @@
       </ul>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero-section">
         <div class="hero-overlay"></div>
         <div class="hero-text">
@@ -151,7 +155,7 @@
        
       </section>
       <section class="home-services" id="scroller">
-        <p class="heading-services">SERVICES</p>
+        <h2 class="heading-services">SERVICES</h2>
         <div class="heading-services-wrapper">
           <div class="home-services-img-container" id="hscontainer1">
             <h4><span>01</span> DYEING</h4>
@@ -192,28 +196,28 @@
         <div class="photo-gallery">
             <div class="column">
                 <div class="photo">
-                    <img src="../04-Gallery/images/recent-work1.webp" alt="Brown wavy hair treatment at Fryzerium2.0 in Myslenice." loading="lazy">
+                    <img src="../04-Gallery/images/recent-work1.webp" alt="Brown wavy hair treatment" loading="lazy">
                 </div>
                 <div class="photo">
-                    <img src="../04-Gallery/images/recent-work2.webp" alt="Blonde wavy hair treatment at Fryzerium2.0 in Myslenice." loading="lazy">
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="photo">
-                    <img src="../04-Gallery/images/recent-work3.webp" alt="Blonde keratin straightening hair treatment at Fryzerium2.0 in Myslenice." loading="lazy">
-                </div>
-                <div class="photo">
-                    <img src="../04-Gallery/images/recent-work4.webp" alt="Baleyage blonde on wavy hair treatment at Fryzerium2.0 in Myslenice." loading="lazy">
+                    <img src="../04-Gallery/images/recent-work2.webp" alt="Blonde wavy hair treatment" loading="lazy">
                 </div>
             </div>
 
             <div class="column">
                 <div class="photo">
-                    <img src="../04-Gallery/images/recent-work5.webp" alt="Blonde toning on wavy hair treatment at Fryzerium2.0 in Myslenice." loading="lazy">
+                    <img src="../04-Gallery/images/recent-work3.webp" alt="Blonde keratin straightening hair treatment" loading="lazy">
                 </div>
                 <div class="photo">
-                    <img src="../04-Gallery/images/recent-work6.webp" alt="Cool blonde hair dye at Fryzerium2.0 in Myslenice on long hair." loading="lazy">
+                    <img src="../04-Gallery/images/recent-work4.webp" alt="Baleyage blonde on wavy hair treatment" loading="lazy">
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="photo">
+                    <img src="../04-Gallery/images/recent-work5.webp" alt="Blonde toning on wavy hair treatment" loading="lazy">
+                </div>
+                <div class="photo">
+                    <img src="../04-Gallery/images/recent-work6.webp" alt="Cool blonde hair dye on long hair." loading="lazy">
                 </div>
             </div>
         </div>
@@ -225,7 +229,7 @@
 
       <section class="who-are-we">
         <div class="who-are-we-container">
-          <h1 class="who-are-we-heading">WHO ARE WE?</h1>
+          <h2 class="who-are-we-heading">WHO ARE WE?</h2>
           <p class="who-are-we-text">
             Get to know the faces behind Fryzerium 2.0 and the passion that
             drives us.
@@ -235,7 +239,7 @@
       </section>
       <section class="who-are-we-repair">
         <div class="who-are-we-container">
-          <h1 class="who-are-we-heading">WHO ARE WE?</h1>
+          <h2 class="who-are-we-heading">WHO ARE WE?</h2>
           <p class="who-are-we-text">
             Get to know the faces behind Fryzerium 2.0 and the passion that
             drives us.
@@ -243,7 +247,7 @@
           <a href="../06-About-Us/about-us.html" class="who-are-we-button">MEET OUR TEAM</a>
       </section>
       <section class="testimonials">
-        <p class="testi-heading">OUR CLIENTS’ REVIEWS</p>
+        <h2 class="testi-heading">OUR CLIENTS’ REVIEWS</h2>
         <p class="testi-text">
           Customer satisfaction with the services we provide is our priority.
         </p>
@@ -252,7 +256,7 @@
             <div class="bottom-quote">
               <img
                 src="images/botquote.svg"
-                alt="decorational quote for testimonials - bottom"
+                alt=""
               />
             </div>
             <div class="testi-card">
@@ -261,11 +265,11 @@
                 the highest level.
               </p>
               <div class="testi-stars">
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
+                <img src="images/Star 1.svg" alt="Five stars" />
+                <img src="images/Star 1.svg" alt="" />
+                <img src="images/Star 1.svg" alt="" />
+                <img src="images/Star 1.svg" alt="" />
+                <img src="images/Star 1.svg" alt="" />
               </div>
               <p class="testi-user-name">Agnieszka Górecka</p>
             </div>
@@ -276,11 +280,11 @@ I haven't been so satisfied with a hairdresser for a long time. I will definitel
 
               </p>
               <div class="testi-stars">
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
+                <img src="images/Star 1.svg" alt="Five stars" />
+                <img src="images/Star 1.svg" alt="" />
+                <img src="images/Star 1.svg" alt="" />
+                <img src="images/Star 1.svg" alt="" />
+                <img src="images/Star 1.svg" alt="" />
               </div>
               <p class="testi-user-name">Anna Szczerbińska</p>
             </div>
@@ -289,16 +293,16 @@ I haven't been so satisfied with a hairdresser for a long time. I will definitel
                 Great atmosphere, nice and professional staff. Mrs. Joanna always provides her clients with friendly advice. I have never left dissatisfied.
               </p>
               <div class="testi-stars">
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
-                <img src="images/Star 1.svg" alt="One of the stars given" />
+                <img src="images/Star 1.svg" alt="Five stars" />
+                <img src="images/Star 1.svg" alt="" />
+                <img src="images/Star 1.svg" alt="" />
+                <img src="images/Star 1.svg" alt="" />
+                <img src="images/Star 1.svg" alt="" />
               </div>
               <p class="testi-user-name">Faustyna Duda-Wiśniewska 
               </p>
             </div>
-            <div class="top-quote"><img src="images/topquote.svg" alt="decorational quote for testimonials - top"></div>
+            <div class="top-quote"><img src="images/topquote.svg" alt=""></div>
           </div>
         </div>
         <a
@@ -310,7 +314,7 @@ I haven't been so satisfied with a hairdresser for a long time. I will definitel
           <!-- NASHI ARGAN PRODUCTS SECTION -->
       <section class="product-section">
         <div class="product-container">
-          <h1 class="product-heading">NASHI ARGAN PRODUCTS</h1>
+          <h2 class="product-heading">NASHI ARGAN PRODUCTS</h2>
           <p class="product-text">
             Discover the essence of luxury behind our Nashi Argan collection.
           </p>
@@ -319,7 +323,7 @@ I haven't been so satisfied with a hairdresser for a long time. I will definitel
       </section>
       <section class="product-repair">
         <div class="product-container">
-          <h1 class="product-heading">NASHI ARGAN PRODUCTS</h1>
+          <h2 class="product-heading">NASHI ARGAN PRODUCTS</h2>
           <p class="product-text">
             Discover the essence of luxury behind our Nashi Argan collection.
           </p>
