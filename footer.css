@@ -85,6 +85,24 @@ body {
     justify-content: space-between;
     margin-bottom: 0.87rem;
     cursor: pointer;
+    transition:  .3s;
+    border: 1px solid transparent;
+}
+.footer-column button:hover {
+    border: 1px solid var(--gold);
+    background-color: var(--brown);
+    color: var(--gold);
+    
+}
+.footer-socials a svg {
+    transition: .3s;
+}
+.footer-socials a svg:hover {
+    fill: var(--gold);
+}
+.footer-column button .phonefooter {
+    fill: var(--white);
+  
 }
 .footerbutton1text {
     margin-right: 15px;
