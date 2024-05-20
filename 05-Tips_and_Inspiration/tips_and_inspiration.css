@@ -43,12 +43,15 @@
     max-width: 1400px;
     gap: 20px;
     margin: 120px auto 230px;
-    padding: 0 100px; /* Adds 100px space from left and right ends */
+    padding: 0 100px; 
+}
+.articles-section a {
+  transition:  0.3s ease;
 }
   
   .single-article {
     padding: 20px;
-    transition: transform 0.3s ease;
+
   }
   
   .single-article img {
@@ -72,7 +75,7 @@
     margin-right: 20px;
   }
   
-  .single-article:hover {
+  .articles-section a:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }

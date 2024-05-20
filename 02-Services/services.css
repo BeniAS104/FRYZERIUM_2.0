@@ -146,9 +146,13 @@ line-height: 1.5rem;
     margin-left: auto;
     margin-right: 135px;
     gap:5px;
+    align-items: center;
 }
 .price  {
     margin-right: 25px;
+}
+.time {
+    height: fit-content;
 }
 .hidden {
     display: none;
@@ -166,8 +170,6 @@ line-height: 1.5rem;
     .dura, .price {
         margin-top: 5vh;
     }
-}
-@media (max-width: 738px) {
     .service {
         flex-wrap: wrap;
     }
@@ -177,26 +179,26 @@ line-height: 1.5rem;
         max-width: 100%;
         gap:4vw;
     }
-    .dura, .price {
-        margin-top: 5vh;
-    }
 }
 @media (max-width: 604px) {
     .services {
         max-width: 90%;
     }
-    .names p:nth-child(2),.names p:nth-child(3) {
-        display: none;
+    .names p:nth-child(2) {
+        margin: 0 !important;
     }
-    
     .names p {
-        margin-inline: auto;
+        font-size: 20px;
+       
     }
     .service {
         flex-wrap: wrap;
+        margin: 6vh 0 0;
+
     }
     .name {
         font-size: 1rem;
+        
     }
     .desc {
         font-size: 0.75rem;
@@ -207,13 +209,30 @@ line-height: 1.5rem;
         max-width: 100%;
         gap:4vw;
     }
-    .dura svg,.dura p, .price p {
-        margin-top: 5vh;
-        
+    .dura, .price {
+        margin-right: auto;
     }
 }
+@media (max-width: 440px) { 
+    .names p:not(:first-of-type) {
+        display: none;
+        
+    }
+    .names p {
+        margin-left: auto;
+        font-size: 1.5rem;
+    }
+    .names::after{
+        content: 'S';
+        margin-right: auto;
+        font-size: 24px;
+        font-family: var(--seasonsbold);
+    }
+    .last-information {
+        margin: 0vh auto 13vh;
+       }
 
-
+}
 
 
 
@@ -264,4 +283,10 @@ margin: 0 auto;
     background-color: var(--white);
     color: var(--black);
 }
+@media (max-width: 440px) { 
+ 
+    .last-information {
+        margin: 10vh auto 13vh;
+       }
 
+}
