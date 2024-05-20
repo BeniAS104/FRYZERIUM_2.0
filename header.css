@@ -110,20 +110,36 @@ html {
 .navlinks a.active::before {
     width: 100%;
  }
-.bookingButton {
+ .bookingButton {
     display: flex;
     padding: 1rem;
     justify-content: center;
     align-items: center;
     background: var(--brown);
-    color:var(--white);
+    color: var(--white);
     transition: 0.3s;
-}
-.bookingButton:hover {
+  }
+  
+  .bookingButton a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: inherit; /* Use inherit to keep the color from the parent */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .bookingButton:hover {
     background: var(--white);
-    color:var(--brown);
+    color: var(--brown);
     box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
-}
+    cursor: pointer;
+  }
+  
+  .bookingButton:hover a {
+    color: var(--brown); /* Ensure text color changes on hover */
+  }
 #check {
     display: none; /* Hide the checkbox */
 }
@@ -188,7 +204,11 @@ html {
 
 /* General focus style */
 :focus {
-    outline: 2px solid #BB3B0E;
+    outline: none;
+  }
+  
+.focus-visible {
+    outline: 4px solid #BB3B0E;
     outline-offset: 3px;
     transition: .2s;
   }

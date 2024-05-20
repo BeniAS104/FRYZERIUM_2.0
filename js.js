@@ -1,3 +1,6 @@
+
+// THIS PART IS FOR ADDING .ACTIVE CLASS TO .NAVLINKS AT THE HEADER 
+// TO GIVE THE LINE VISUAL WHILE BEING ON A SITE
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
     // Get all nav links
@@ -23,4 +26,30 @@ document.addEventListener('DOMContentLoaded', function () {
             link.classList.add('active');
         }
     });
+});
+// THIS PART IS FOR THE :FOCUS ELEMENT
+//  NOT TO APPEAR WHEN CLICKING WITH MOUSE - ONLY WITH TABBING
+
+// Add a flag to track keyboard interaction
+let isKeyboard = false;
+
+// Add event listeners for keyboard and mouse interactions
+document.addEventListener('keydown', () => {
+  isKeyboard = true;
+});
+
+document.addEventListener('mousedown', () => {
+  isKeyboard = false;
+});
+
+// Add the focus-visible class if the focus event was triggered by keyboard
+document.addEventListener('focusin', (event) => {
+  if (isKeyboard) {
+    event.target.classList.add('focus-visible');
+  }
+});
+
+// Remove the focus-visible class on focus out
+document.addEventListener('focusout', (event) => {
+  event.target.classList.remove('focus-visible');
 });
