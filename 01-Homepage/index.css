@@ -779,18 +779,6 @@ swiper-container {
     border: solid 1px var(--brown);
 }
 
-#skip-to-content-button{
-    z-index: 100;
-    position: absolute;
-    top: -10rem;
-    left: 1rem;
-}
-
-#skip-to-content-button:focus{
-    top: 1rem;
-}
-
-
 /* For mobile */
 @media screen and (max-width: 600px) {
     .call-to-action {
