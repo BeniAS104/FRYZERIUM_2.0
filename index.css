@@ -410,7 +410,7 @@ line-height: normal;
   @media screen and (max-width: 616px) {
     .who-are-we {
         margin-top: 6.5rem;
-        background: url(/01-Homepage/images/team2.png);
+        background: url(/images/team2.png);
         align-items: center;
         background-repeat: no-repeat;
         background-size:100%;
@@ -688,7 +688,7 @@ line-height: normal;
   @media screen and (max-width: 858px)
   {
     .product-section {
-        background: url(/01-Homepage/images/products2.png);
+        background: url(/images/products2.png);
         background-repeat: no-repeat;
         background-size:100%;
      }
@@ -698,7 +698,6 @@ line-height: normal;
   @media screen and (max-width: 616px) {
     .product-section {
         margin-top: 6.5rem;
-        background: url(/01-Homepage/images/products2.png);
         align-items: center;
         background-repeat: no-repeat;
         background-size:100%;
