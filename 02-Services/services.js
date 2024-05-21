@@ -1,5 +1,4 @@
 // cat = category
-console.log(`helo`)
 document.addEventListener('DOMContentLoaded', () => {
     const cats = document.querySelectorAll('.cat');  // Select all category elements
     const serviceClasses = ['cutting', 'dyeing', 'haircare', 'updos'];  // Define service classes
