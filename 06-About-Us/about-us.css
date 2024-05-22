@@ -64,7 +64,7 @@
     text-align: center;
   }
 
-  .mission-cards {
+.mission-cards {
     gap: 2%;
     display: flex;
     margin: 0 10%;
