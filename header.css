@@ -23,10 +23,14 @@
     --seasonsbold: 'SeasonsBold', serif;
 
     /*========== Font Size ==========*/
-    --huge-heading: 3rem; /*48px*/
-    --heading: 2.25rem; /*36px*/
-    --subheading: 1.5rem; /*24px*/
-    --text: 1rem; /*16px*/
+    --huge-heading: 3rem;
+    /*48px*/
+    --heading: 2.25rem;
+    /*36px*/
+    --subheading: 1.5rem;
+    /*24px*/
+    --text: 1rem;
+    /*16px*/
 
     /*========== Font Weight ==========*/
     --font-light: 300;
@@ -36,68 +40,90 @@
     --font-bold: 700;
 
     /*========== Margins ==========*/
-    --margin-45px: 2.813rem; /*45px*/
-    --margin-60px: 3.75rem; /*60px*/
-    --margin-150px: 9.375rem; /*150px*/
-    --margin-230px: 14.375rem; /*230px*/
+    --margin-45px: 2.813rem;
+    /*45px*/
+    --margin-60px: 3.75rem;
+    /*60px*/
+    --margin-150px: 9.375rem;
+    /*150px*/
+    --margin-230px: 14.375rem;
+    /*230px*/
 
     /*========== Line Height ==========*/
-    --line-height-subheading: 2.188rem; /*35px*/
-    --line-height-text: 1.5rem: /*24px*/
+    --line-height-subheading: 2.188rem;
+    /*35px*/
+    --line-height-text: 1.5rem:
+        /*24px*/
 }
 
 /*=============== BASE ===============*/
 /* Universal selector */
 * {
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
     padding: 0;
     margin: 0;
     font-family: var(--montserrat);
     text-decoration: none;
-    color:inherit;
+    color: inherit;
     font-size: var(--text);
-    scroll-behavior:smooth; /* Enable smooth scrolling */
-    -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+    scroll-behavior: smooth;
+    /* Enable smooth scrolling */
+    -moz-osx-font-smoothing: grayscale;
+    /* For Firefox on macOS */
     -webkit-font-smoothing: antialiased;
 }
+
 html {
     background-color: var(--white);
-    min-height: 100vh; /* Set the minimum height of the body to 100 viewport height */
+    min-height: 100vh;
+    /* Set the minimum height of the body to 100 viewport height */
     color: var(--black);
 }
 
 .header {
-    position: fixed; /* Fixed position at the top */
+    position: fixed;
+    /* Fixed position at the top */
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
     background-color: var(--white);
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space elements evenly */
-    align-items: center; /* Align items vertically at the center */
-    transition: 0.6s; /* Add a transition effect */
-    z-index: 100; /* Stack above other elements */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space elements evenly */
+    align-items: center;
+    /* Align items vertically at the center */
+    transition: 0.6s;
+    /* Add a transition effect */
+    z-index: 100;
+    /* Stack above other elements */
     -webkit-box-shadow: 0 3px 5px rgba(23, 19, 11, 0.2);
-  -moz-box-shadow: 0 3px 5px rgba(23, 19, 11, 0.2);
-  box-shadow: 0 3px 5px rgba(23, 19, 11, 0.2);
+    -moz-box-shadow: 0 3px 5px rgba(23, 19, 11, 0.2);
+    box-shadow: 0 3px 5px rgba(23, 19, 11, 0.2);
 }
+
 .logo {
     max-width: 8rem;
     height: auto;
 }
+
 .navlinks {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
+
 .navlinks a {
     position: relative;
 }
+
 /* Create a pseudo-element (::before) for all anchor tags inside elements with class 'navlinks' */
 .navlinks a::before {
-    content: ''; /* An empty content */
+    content: '';
+    /* An empty content */
     position: absolute;
     top: 100%;
     left: 0;
@@ -106,11 +132,13 @@ html {
     background: var(--black);
     transition: .3s;
 }
+
 .navlinks a:not(.no-hover-effect):hover::before,
 .navlinks a.active::before {
     width: 100%;
- }
- .bookingButton {
+}
+
+.bookingButton {
     display: flex;
     padding: 1rem;
     justify-content: center;
@@ -118,43 +146,58 @@ html {
     background: var(--brown);
     color: var(--white);
     transition: 0.3s;
-  }
-  
-  .bookingButton a {
+}
+
+.bookingButton a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    color: inherit; /* Use inherit to keep the color from the parent */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .bookingButton:hover {
+    color: inherit;
+    /* Use inherit to keep the color from the parent */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.bookingButton:hover {
     background: var(--white);
     color: var(--brown);
-    box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
+    box-shadow: inset 0 0 0 1px var(--brown);
+    /* Add an inner border */
     cursor: pointer;
-  }
-  
-  .bookingButton:hover a {
-    color: var(--brown); /* Ensure text color changes on hover */
-  }
+}
+
+.bookingButton:hover a {
+    color: var(--brown);
+    /* Ensure text color changes on hover */
+}
+
 #check {
-    display: none; /* Hide the checkbox */
+    display: none;
+    /* Hide the checkbox */
 }
+
 .icons {
-    position: absolute; /* Absolute positioning */
-    right: 5%; /* Distance from the right */
+    position: absolute;
+    /* Absolute positioning */
+    right: 5%;
+    /* Distance from the right */
     color: var(--black);
-    cursor: pointer; /* Change cursor to pointer on hover */
-    display: none; /* Hide the icons by default */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    display: none;
+    /* Hide the icons by default */
 }
+
 .icons i {
-    font-size: 2.5rem; /* Size of the burger menu and close buttons */
+    font-size: 2.5rem;
+    /* Size of the burger menu and close buttons */
 }
+
 .instagramHeader {
-    vertical-align: middle; /* Places IG icon in the middle */
+    vertical-align: middle;
+    /* Places IG icon in the middle */
 }
 
 /*=============== BREAKPOINTS HEADER ===============*/
@@ -163,28 +206,39 @@ html {
     .header {
         padding: 20px 5%;
     }
+
     .logo {
         max-width: 6rem;
         height: auto;
     }
+
     .icons {
-        display: inline-flex; /* Display icons as inline-flex at smaller screen sizes */
+        display: inline-flex;
+        /* Display icons as inline-flex at smaller screen sizes */
     }
+
     #check:checked~.navlinks {
         height: 30rem;
         padding-top: 2rem;
     }
+
     #check:checked~.icons #menu-icon {
-        display: none; /* Hide the menu icon when the checkbox is checked */
-        
+        display: none;
+        /* Hide the menu icon when the checkbox is checked */
+
     }
+
     .icons #close-icon {
-        display: none; /* Hide the close icon by default */
-       
+        display: none;
+        /* Hide the close icon by default */
+
     }
+
     #check:checked~.icons #close-icon {
-        display: block; /* Display the close icon when the checkbox is checked */
+        display: block;
+        /* Display the close icon when the checkbox is checked */
     }
+
     .navlinks {
         position: absolute;
         flex-direction: column;
@@ -193,23 +247,37 @@ html {
         left: 0;
         width: 100%;
         height: 0;
-        background:var(--beige);
+        background: var(--beige);
         transition: .3s ease-in-out;
         overflow: hidden;
     }
+
     #check:checked~.navlinks {
-        height: 33rem; /* height of the drop-down beige navbar */
+        height: 33rem;
+        /* height of the drop-down beige navbar */
     }
 }
 
 /* General focus style */
 :focus {
     outline: none;
-  }
-  
+}
+
 .focus-visible {
     outline: 4px solid #BB3B0E;
     outline-offset: 3px;
     transition: .2s;
-  }
-  
+}
+
+
+/* Skip to content button for all the pages */
+.skip-to-content {
+    z-index: 101;
+    position: absolute;
+    top: -5rem;
+    left: 1rem;
+}
+
+.skip-to-content:focus {
+    top: 1rem;
+}
