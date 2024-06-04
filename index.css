@@ -150,7 +150,7 @@ color: var(--white);
     background-position: center;
     padding: 2.5rem 2.5rem 5rem 2.5rem;
 }
-.home-services-img-container h4 {
+.home-services-img-container h3 {
     font-family: var(--seasonsbold);
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -232,7 +232,7 @@ line-height: normal;
     .home-services-last-container {
         margin-top: 20%;
     }
-    .home-services-img-container h4 {
+    .home-services-img-container h3 {
         font-size: var(--subheading);
     }
     .home-services-img-container p {
@@ -324,7 +324,7 @@ line-height: normal;
  /* WHO ARE WE SECTION */
 .who-are-we {
     margin-top: 9rem;
-    background: url(./images/team.png);
+    background: url("images/team.png");
     background-repeat: no-repeat;
     background-size:cover;
     height: 75vh;
@@ -392,7 +392,7 @@ line-height: normal;
         justify-content: center;
        
     }
-    .who-are-we-container h1 , .who-are-we-container p {
+    .who-are-we-container h2 , .who-are-we-container p {
         color: var(--black);
     }
     .who-are-we-button {
@@ -410,7 +410,7 @@ line-height: normal;
   @media screen and (max-width: 616px) {
     .who-are-we {
         margin-top: 6.5rem;
-        background: url(/images/team2.png);
+        background: url("images/team2.png");
         align-items: center;
         background-repeat: no-repeat;
         background-size:100%;
@@ -606,7 +606,7 @@ line-height: normal;
 /* NASHI ARGAN PRODUCTS */
 .product-section {
     margin-top: 9rem;
-    background: url(./images/products.png);
+    background: url("images/products.png");
     background-repeat: no-repeat;
     background-size:cover;
     height: 75vh;
@@ -671,7 +671,7 @@ line-height: normal;
         justify-content: center;
        
     }
-    .product-container h1 , .product-container p {
+    .product-container h2 , .product-container p {
         color: var(--black);
     }
     .product-button {
@@ -688,7 +688,7 @@ line-height: normal;
   @media screen and (max-width: 858px)
   {
     .product-section {
-        background: url(/images/products2.png);
+        background: url("images/products2.png");
         background-repeat: no-repeat;
         background-size:100%;
      }
@@ -823,7 +823,7 @@ swiper-container {
     align-items: center;
     margin-bottom: 230px;
 }
-.call-to-action h3 {
+.call-to-action p {
     font-family: var(--seasonsbold);
     font-size: var(--heading);
     margin-bottom: 2.5rem;;
@@ -850,7 +850,7 @@ swiper-container {
     .call-to-action {
         margin-bottom: 20%;
     }
-    .call-to-action h3 {
+    .call-to-action p {
         font-size: var(--subheading);
     }
 }
