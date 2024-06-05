@@ -39,7 +39,7 @@
 .categories {
     margin-top: 13vh;
 }
-.categories h1 {
+.categories h2 {
     font-family: var(--seasonsbold);
     font-size: 2.25rem;
     font-style: normal;
@@ -252,7 +252,8 @@ line-height: 1.5rem; /* 150% */
 max-width: 80%;
 margin: 0 auto;
 }
-.last-information h1{
+
+.last-information span{
     margin: 10vh 0 5vh;
     font-size: 1.5rem;
 font-style: normal;

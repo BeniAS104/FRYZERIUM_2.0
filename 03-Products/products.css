@@ -61,7 +61,7 @@
     margin-bottom: 10px;
 }
 
-.product-shortcut h5 {
+.product-shortcut p {
     font-size: var(--text);
     font-weight: 500;
 }
@@ -88,7 +88,7 @@
     align-items: center;
     gap: 10%;
 }
-.nashi-argan-aside-container h4 {
+.nashi-argan-aside-container h2 {
     font-size: var(--subheading);
     font-weight: 500;
 }
@@ -143,7 +143,7 @@
 .product aside {
     margin-right: 10%;
 }
-.product h4{
+.product h3{
     font-size: var(--subheading);
     font-weight: 400;
     margin: var(--margin-45px) 0;
@@ -193,7 +193,7 @@
     margin-bottom: 230px;
     margin-top: 60px;
 }
-.call-to-action h3 {
+.call-to-action p {
     font-size: var(--subheading);
     font-weight: 400;
     margin-bottom: 2.5rem;
