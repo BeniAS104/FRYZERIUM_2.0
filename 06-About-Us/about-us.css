@@ -77,7 +77,7 @@
     gap: 2rem;
     padding: 5% 5%;
 }
-.mission-card h4 {
+.mission-card h3 {
     font-size: var(--subheading);
     font-family: var(--seasonsbold);
 }
@@ -165,7 +165,7 @@
     padding: 120px 0 30px;
     justify-content: center;
 }
-.about-hairdresser h4 {
+.about-hairdresser h3 {
     font-size: var(--subheading);
     font-weight: 500;
     margin: var(--margin-45px) 0;

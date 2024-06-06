@@ -86,7 +86,7 @@
 }
 
 /*=============== WEDDING CAROUSEL ===============*/
-.wedding-updo-carousel h1 {
+.wedding-updo-carousel h2 {
     font-size: 2.25rem;
     font-weight: 400;
     font-family: var(--seasonsbold);
@@ -120,7 +120,7 @@
     font-size: 30px !important;
   }
   @media screen and (max-width: 580px) {
-    .wedding-updo-carousel h1 {
+    .wedding-updo-carousel h2 {
       font-size: var(--subheading);
     }
   }
@@ -273,7 +273,7 @@
     align-items: center;
     margin-bottom: 230px;
 }
-.call-to-action h3 {
+.call-to-action p {
     font-family: var(--seasonsbold);
     font-size: var(--subheading);
     margin-bottom: 2.5rem;;
