@@ -29,7 +29,6 @@ article img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-bottom: 45px;
 }
 section p {
     line-height: 24px;
@@ -58,6 +57,23 @@ section h3 {
 .one-head-shape {
     margin-bottom: 20px;
 }
+.types h3 {
+  margin: 15px 0;
+}
+.types li:last-of-type {
+  margin: 15px 0 30px;
+}
+p.ending {
+  margin: 20px 0;
+  line-height: 24px;
+} 
+.heading span {
+  font-family: "montserrat";
+  vertical-align: top;
+} 
+.ending a {
+  text-decoration: underline;
+}
 
 @media (max-width: 600px) {
     .article-container {
@@ -68,6 +84,7 @@ section h3 {
         text-align: center;
     }
 }
+
 
 /*=============== MORE ARTICLES - HEADING ===============*/
 .more-articles {
@@ -106,11 +123,11 @@ section h3 {
     gap: 20px;
     margin: 25px auto 230px;
     padding: 0 100px; /* Adds 100px space from left and right ends */
+    align-items: stretch;
 }
   
   .single-article {
     padding: 20px;
-    transition: transform 0.3s ease;
   }
   
   .single-article img {
@@ -134,7 +151,10 @@ section h3 {
     margin-right: 20px;
   }
   
-  .single-article:hover {
+  .articles-section a{
+    transition: 0.3s ease;
+  }
+  .articles-section a:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }

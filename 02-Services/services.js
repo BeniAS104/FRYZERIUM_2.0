@@ -1,4 +1,3 @@
-// cat = category
 document.addEventListener('DOMContentLoaded', () => {
     const cats = document.querySelectorAll('.cat');  // Select all category elements
     const serviceClasses = ['cutting', 'dyeing', 'haircare', 'updos'];  // Define service classes
@@ -23,6 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach event listeners to each category
     cats.forEach((cat, index) => {
         cat.addEventListener('click', () => handleCatClick(cat, index));
+        cat.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                handleCatClick(cat, index);
+            }
+        });
     });
 
     // Set initial state by activating the first category

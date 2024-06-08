@@ -29,7 +29,7 @@
 /* For mobile */
 @media screen and (max-width: 600px) {
     .hero-section {
-        height: 30vh;
+        height: 30vh !important;
 
     }
     .hero-section h1 {
