@@ -173,7 +173,10 @@
     padding-bottom: 40%;
     height: 0;
     overflow: hidden;
+    /* display: flex; */
+    /* justify-content: center; */
 }
+
 .google-map iframe {
     position: absolute;
     top: 0;
@@ -182,6 +185,12 @@
     height: 100%;
     border: 0;
 }
+
+.google-maps-cta {
+    display: flex;
+    align-items: center;
+}
+
 #map-section-button {
     display: flex;
     align-items: center;
