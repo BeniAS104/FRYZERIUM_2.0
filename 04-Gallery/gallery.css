@@ -278,7 +278,7 @@
     font-size: var(--subheading);
     margin-bottom: 2.5rem;;
 }
-.call-to-action button {
+.call-to-action a {
     background-color: var(--brown);
     color: var(--white);
     padding: 1.25rem 2.5rem;
@@ -286,7 +286,7 @@
     cursor: pointer;
     transition: 0.3s;
 }
-.call-to-action button:hover {
+.call-to-action a:hover {
     background-color: var(--white);
     color: var(--brown);
     border: none;

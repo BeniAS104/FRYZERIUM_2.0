@@ -828,7 +828,7 @@ swiper-container {
     font-size: var(--heading);
     margin-bottom: 2.5rem;;
 }
-.call-to-action button {
+.call-to-action a {
     background-color: var(--brown);
     color: var(--white);
     padding: 1.25rem 2.5rem;
@@ -838,7 +838,7 @@ swiper-container {
     transition: 0.3s;
     border: solid 1px transparent;
 }
-.call-to-action button:hover {
+.call-to-action a:hover {
     background-color: var(--white);
     color: var(--brown);
     font-weight: 500;

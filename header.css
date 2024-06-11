@@ -72,6 +72,7 @@
     -moz-osx-font-smoothing: grayscale;
     /* For Firefox on macOS */
     -webkit-font-smoothing: antialiased;
+    outline: none; /* Delete the original outlines when focused */
 }
 
 html {
@@ -260,14 +261,25 @@ html {
 
 /* General focus style */
 :focus {
-    outline: none;
-}
-
-.focus-visible {
+    /* outline: none; */
     outline: 4px solid #BB3B0E;
     outline-offset: 3px;
     transition: .2s;
 }
+
+footer a:focus {
+    /* outline: none; */
+    outline: 4px solid var(--gold);
+    outline-offset: 3px;
+    transition: .2s;
+}
+
+.focus-visible {
+    /* outline: 4px solid #BB3B0E;
+    outline-offset: 3px;
+    transition: .2s; */
+}
+
 
 
 /* Skip to content button for all the pages */

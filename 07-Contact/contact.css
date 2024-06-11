@@ -98,7 +98,7 @@
 .information-card p {
     text-align: center;
 }
-.information-card button {
+.information-card a {
     background-color: var(--brown);
     color: var(--white);
     padding: 1.25rem 2.5rem;
@@ -106,7 +106,7 @@
     cursor: pointer;
     transition: 0.3s;
 }
-.information-card button:hover {
+.information-card a:hover {
     background-color: var(--beige);
     color: var(--brown);
     border: none;

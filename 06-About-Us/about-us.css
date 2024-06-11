@@ -235,7 +235,7 @@
     margin: var(--margin-45px) 0;
     line-height: 24px;
 }
-.about-nashi-argan button {
+.about-nashi-argan a {
     background-color: var(--brown);
     color: var(--white);
     padding: 1.25rem 2.5rem;
@@ -244,7 +244,7 @@
     margin-bottom: 45px;
     transition: 0.3s;
 }
-.about-nashi-argan button:hover {
+.about-nashi-argan a:hover {
     background-color: var(--white);
     color: var(--brown);
     border: none;
