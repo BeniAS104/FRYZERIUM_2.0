@@ -1,12 +1,14 @@
 /*=============== HERO SECTION ===============*/
 .hero-section {
-    position: relative; /* relative positioning for absolute positioning of text */
+    position: relative;
+    /* relative positioning for absolute positioning of text */
     background-image: url(images/hero-contact.webp);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center center;
     height: 40vh;
 }
+
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -15,12 +17,14 @@
     height: 100%;
     background-color: rgba(24, 12, 5, 0.75);
 }
+
 .hero-section h1 {
     position: absolute;
     color: var(--white);
     font-size: var(--huge-heading);
     font-family: var(--seasonsbold);
-    z-index: 1; /* Ensure text appears above overlay */
+    z-index: 1;
+    /* Ensure text appears above overlay */
     left: 100px;
     bottom: 50px;
 }
@@ -30,6 +34,7 @@
     .hero-section {
         height: 30vh;
     }
+
     .hero-section h1 {
         font-size: var(--subheading);
         left: 10%;
@@ -44,17 +49,20 @@
     padding: 120px 0 150px 0;
     text-align: center;
 }
+
 .contact-information h2 {
     font-family: var(--seasonsbold);
     font-size: var(--heading);
     color: var(--black);
     margin-bottom: var(--margin-45px);
 }
+
 .contact-information-wrapper {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+
 .contact-information-container {
     display: flex;
     flex-direction: column;
@@ -71,6 +79,7 @@
     .contact-information {
         padding: 10% 5%;
     }
+
     .contact-information h2 {
         font-size: var(--subheading);
     }
@@ -83,6 +92,7 @@
     margin: 0 10%;
     margin-bottom: 120px;
 }
+
 .information-card {
     background: var(--beige);
     display: flex;
@@ -92,12 +102,15 @@
     align-items: center;
     padding: 10% 5%;
 }
+
 .information-card img {
     max-width: 40%;
 }
+
 .information-card p {
     text-align: center;
 }
+
 .information-card a {
     background-color: var(--brown);
     color: var(--white);
@@ -106,12 +119,14 @@
     cursor: pointer;
     transition: 0.3s;
 }
+
 .information-card a:hover {
     background-color: var(--beige);
     color: var(--brown);
     border: none;
-    box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
-    
+    box-shadow: inset 0 0 0 1px var(--brown);
+    /* Add an inner border */
+
 }
 
 @media (max-width: 992px) {
@@ -119,13 +134,16 @@
         flex-direction: column;
         margin-bottom: 10%;
     }
+
     .information-card {
         margin: 2% 0;
         padding: 10% 5%;
     }
+
     .information-card button {
         padding: 1rem 2rem;
     }
+
     .information-card img {
         max-width: 40%;
     }
@@ -137,25 +155,40 @@
     flex-direction: column;
     align-items: center;
 }
+
+/* for new tables */
+.opening-hours td {
+    line-height: 2rem;
+    padding: 0 3rem;
+}
+
 .opening-hours h2 {
     font-family: var(--seasonsbold);
     font-size: var(--heading);
     color: var(--black);
     margin-bottom: var(--margin-45px);
 }
-.opening-hours-container {
+
+/* .opening-hours-container {
     display: flex;
     gap: 6rem;
-}
-.opening-hours-container ul {
+} */
+
+/* Styles that were used for lists */
+/* .opening-hours-container ul {
     list-style: none;
     line-height: 2rem;
-}
+} */
 
 @media (max-width: 600px) {
     .opening-hours h2 {
         font-size: var(--subheading);
         margin-bottom: 5%;
+    }
+
+    /* for new tables */
+    .opening-hours td {
+        padding: 0 1rem;
     }
 }
 
@@ -163,7 +196,10 @@
     .opening-hours-container {
         gap: 4rem;
     }
+
+
 }
+
 /*=============== GOOGLE MAP ===============*/
 .google-map {
     position: relative;
@@ -204,14 +240,17 @@
     cursor: pointer;
     transition: .3s;
 }
+
 #map-section-button:hover {
     background-color: var(--white);
     color: var(--brown);
     border: none;
-    box-shadow: inset 0 0 0 1px var(--brown); /* Add an inner border */
+    box-shadow: inset 0 0 0 1px var(--brown);
+    /* Add an inner border */
     font-weight: 400;
 }
-#map-section-button:hover #location-icon1{
+
+#map-section-button:hover #location-icon1 {
     fill: var(--brown);
 }
 
@@ -219,6 +258,7 @@
     .google-map {
         margin-top: 10%;
     }
+
     #map-section-button {
         margin-bottom: 20%;
     }
