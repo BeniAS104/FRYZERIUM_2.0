@@ -293,3 +293,15 @@ footer a:focus {
 .skip-to-content:focus {
     top: 1rem;
 }
+
+/* elements that are for screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
