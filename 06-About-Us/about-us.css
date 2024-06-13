@@ -181,7 +181,7 @@
 .about-img img {
     max-width: 400px;
 }
-#about-reverse {
+.about-reverse {
     margin-bottom: 120px;
 }
 
@@ -193,7 +193,7 @@
     .about-img img {
         max-width: 300px;
     }
-    #about-reverse {
+    .about-reverse {
         flex-direction: column-reverse;
         margin-bottom: 5%;
     }
