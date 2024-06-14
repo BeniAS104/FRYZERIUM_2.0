@@ -96,13 +96,13 @@
     max-width: 80%;
 }
 .booking-card a{
-    margin-top:auto;
     background-color: var(--brown);
     color: var(--white);
     padding: 1.25rem 2.5rem;
     border: none;
     cursor: pointer;
     transition: 0.3s;
+    text-align: center;
 }
 .booking-card a:hover {
     background-color: var(--beige);
@@ -138,11 +138,7 @@
     .booking-card:nth-child(4) {
         margin-bottom: 10rem;
     }
-    .booking-card a  {
-        flex-grow: 1;
-        
-        
-    }
+   
 }
 
 @media screen and (max-width: 615px) {
