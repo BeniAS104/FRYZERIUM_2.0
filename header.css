@@ -260,27 +260,17 @@ html {
 }
 
 /* General focus style */
-:focus {
-    /* outline: none; */
-    outline: 4px solid #BB3B0E;
+:focus-visible {
+    outline: 4px solid #000000;
     outline-offset: 3px;
     transition: .2s;
 }
 
 footer a:focus {
-    /* outline: none; */
     outline: 4px solid var(--gold);
     outline-offset: 3px;
     transition: .2s;
 }
-
-.focus-visible {
-    /* outline: 4px solid #BB3B0E;
-    outline-offset: 3px;
-    transition: .2s; */
-}
-
-
 
 /* Skip to content button for all the pages */
 .skip-to-content {
