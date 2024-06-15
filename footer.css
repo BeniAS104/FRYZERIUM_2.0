@@ -70,6 +70,7 @@ body {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 2rem;
+    text-align: center;
  
 }
 .footerbutton {
@@ -128,7 +129,8 @@ body {
 }
 .footer-socials {
     display: flex;
-    gap:1.75rem;
+    
+    justify-content: space-around;
 }
 .footer-opening-hours {
     display: flex;
@@ -183,6 +185,9 @@ body {
         padding-inline: 1rem;
         width: 13.9375rem;
         text-align: center;
+    }
+    .footer-socials {
+        gap:1.75rem;
     }
 }
 @media (max-width:728px) {

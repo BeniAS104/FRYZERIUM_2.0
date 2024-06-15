@@ -383,7 +383,7 @@ line-height: normal;
         background-size:cover;
      }
      .who-are-we-container {
-        width: 50%;
+        width: 70%;
         text-align: center;
         margin-right: 0;
         display: inline-flex;
@@ -827,6 +827,7 @@ swiper-container {
     font-family: var(--seasonsbold);
     font-size: var(--heading);
     margin-bottom: 2.5rem;;
+    text-align: center;
 }
 .call-to-action a {
     background-color: var(--brown);
