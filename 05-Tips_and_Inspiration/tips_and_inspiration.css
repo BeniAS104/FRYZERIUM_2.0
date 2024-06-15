@@ -51,6 +51,8 @@
   
   .single-article {
     padding: 20px;
+    cursor: pointer;
+    transition:  0.3s ease;
   }
   
   .single-article img {
@@ -74,9 +76,20 @@
     margin-right: 20px;
   }
   
-  .articles-section a:hover {
+  .single-article:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .read-more-container{
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+  }
+  .read-more{
+    right: 20px;
+    display: flex;
+    align-items: center;
   }
   
   @media (max-width: 992px) {

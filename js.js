@@ -56,3 +56,9 @@ if (isKeyboard) {
 document.addEventListener('focusout', (event) => {
 event.target.classList.remove('focus-visible');
 });
+
+// make articles clickable without makeing it as links
+function handleBoxClick(box) {
+    window.location.href = box.getAttribute('data-link');
+  }
+  
