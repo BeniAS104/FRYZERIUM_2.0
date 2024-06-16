@@ -19,7 +19,6 @@
 
     /*========== Font Family ==========*/
     --montserrat: 'Montserrat', sans-serif;
-    --seasonsregular: 'SeasonsRegular', serif;
     --seasonsbold: 'SeasonsBold', serif;
 
     /*========== Font Size ==========*/
@@ -261,7 +260,7 @@ html {
 
 /* General focus style */
 :focus-visible {
-    outline: 4px solid #000000;
+    outline: 4px solid #BB3B0E;
     outline-offset: 3px;
     transition: .2s;
 }
