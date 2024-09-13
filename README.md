@@ -2,8 +2,8 @@
 A project made in Business Academy Aarhus for a client, namely a polish hair salon FRYZERIUM 2.0. They needed traction for their luxurious salon as it's a newly opened estabilishment so we've provided them with plenty of resources to achieve their goal, alongside with a fully functional website, adherent to their salon design. 
 
 <h2>Project Brief</h2>
-Type: Web Development, UX/UI , Full Website, SEO <br>
-Group: 4 People (2 Coders w/me)
+Type: Web Development, UX/UI , Full-Fledged Website, SEO <br>
+Group: 4 People (2 Coders w/me) <br>
 Date: May 2024 <br>
 Technology Stack: HTML, CSS, JS , Swiper.js Library<br>
 
